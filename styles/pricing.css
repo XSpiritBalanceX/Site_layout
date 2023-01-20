@@ -1,0 +1,91 @@
+:root{
+    --shadow-for-box:0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
+    --mainColor:#155bd5;
+    --text-color:#6d6d6d;
+    --border-color:#1c3ab6;
+    --second-color:white;
+}
+
+.sixth-content{
+    background-color: #fafafa;
+    padding: 10%;
+}
+.contanForPlan{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.itemInPlan{
+    border: solid 1px #efefef;
+    width: 32%;
+    padding: 3%;
+    border-radius: 10px;
+    background-color: var(--second-color);
+    transition: all .3s ease;
+}
+.itemInPlan:hover{
+    box-shadow: var(--shadow-for-box);
+}
+.selectedPlan{
+    box-shadow: var(--shadow-for-box);
+}
+.selectedPlan .text-center{
+    color: var(--second-color);
+    background-color: var(--mainColor);
+}
+.itemInPlan p{
+    width: 90%;
+}
+.itemInPlan h2{
+    font-weight: 600;
+    font-size: 3.3em;
+    position: relative;
+}
+.doll{
+    font-weight: 400;
+    color: var(--text-color);
+    font-size: 23px;
+    position: absolute;left: -13px; top: 10px;
+}
+.perMon{
+    font-weight: 400;
+    color: var(--text-color);
+    font-size: 20px;
+}
+.itemInPlan button{
+    border: var(--mainColor) solid 1px;
+    border-radius: 5px;
+    color: var(--mainColor);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 12px 24px;
+    background-color: transparent;
+}
+.selectedPlan button{
+    color: var(--second-color);
+    background-color: var(--mainColor);
+}
+.itemInPlan button:hover{
+    border: var(--border-color) solid 1px;
+    border-radius: 5px;
+    color: var(--second-color);
+    background-color: var(--border-color);
+}
+.itemInPlan button:active{
+    border: var(--border-color) solid 1px;
+    border-radius: 5px;
+    color: var(--second-color);
+    background-color: var(--border-color);
+}
+.ulPric{
+    list-style: none;
+    text-align: start;
+    color: var(--text-color);
+}
+.ulPric li{
+    margin-bottom: 10px;
+}
+.colorInLi{
+    color: var(--mainColor);
+}
