@@ -1,0 +1,31 @@
+{
+  "name": "spa-template",
+  "version": "1.0.0",
+  "description": "Site created on [layout](https://demo.ayroui.com/templates/business-template/#).",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XSpiritBalanceX/Site_layout.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XSpiritBalanceX/Site_layout/issues"
+  },
+  "homepage": "https://github.com/XSpiritBalanceX/Site_layout#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "mini-css-extract-plugin": "^2.7.2",
+    "node-sass": "^8.0.0",
+    "path": "^0.12.7",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}

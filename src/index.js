@@ -1,0 +1,9 @@
+import './scss/main.scss';
+import './scss/blog.scss';
+import './scss/contact.scss';
+import './scss/footer.scss';
+import './scss/media.scss';
+import './scss/portfolio.scss';
+import './scss/pricing.scss';
+import './scss/services.scss';
+import './scss/team.scss';
