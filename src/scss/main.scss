@@ -2,6 +2,9 @@ $mainColor: #155bd5;
 $secondColor: white;
 $textColor:#6d6d6d;
 
+body{
+    font-family: "Inter", sans-serif ;
+}
 .content-main{
     display: flex;
     flex-direction: row;
@@ -15,8 +18,9 @@ $textColor:#6d6d6d;
 .infoMain{
     width: 47%;
     h1{
-        font-weight: bold;
-        font-size: 2.9em;
+        font-weight: 700;
+        font-size: 44px;
+        line-height:55px;
     }
     &:first-child{
         margin-right: 2%;
@@ -24,7 +28,9 @@ $textColor:#6d6d6d;
 }
 .text-main{
     color: rgb(208, 213, 223);
-    font-size: 17px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height:24px;
 }
 .button-main{
     display: flex;
@@ -49,11 +55,13 @@ $textColor:#6d6d6d;
     }
 }
 .getStarted{
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
     border-radius: 5px;
+    font-size: 16px;
     padding: 0 30px 0 30px;
-    line-height: 1.5;
+    line-height: 20px;
+    letter-spacing: 1.28px;
 }
 .getStarted:hover{
     background-color: transparent;
@@ -61,7 +69,7 @@ $textColor:#6d6d6d;
 }
 .play-button{
     font-size: 25px;
-    font-weight: lighter;
+    line-height: 1.9;
 }
 .person-main{
     img{
@@ -92,12 +100,12 @@ $textColor:#6d6d6d;
     }
 }
 .text-container-second{
-    width: 45%;  
+    width: 47%;  
     h6{
         position: relative;
         padding-left: 30px;
-        font-size: 1.2em;
-        line-height: 1.5;
+        font-size: 18.4px;
+        line-height: 27.6px;
         font-weight: 600;
     }
     h6::before{
@@ -112,7 +120,8 @@ $textColor:#6d6d6d;
     } 
     h2{
         font-weight: 700;
-        font-size: 2.2em;
+        font-size: 36px;
+        line-height: 45px;
     }
 }
 .navWithText{
@@ -121,14 +130,24 @@ $textColor:#6d6d6d;
     border-radius: 5px;
     button{
         color: black !important;
-        font-weight: 600;
+        font-weight: 600 !important;
         border-radius: 5px;
-        margin-left: 30px;
+        padding: 10px 18px;
+        font-size: 16px !important;
+        line-height: 24px;
         background-color: #fafafa !important;
+    }
+    button:not(:nth-child(1)){
+        margin-left: 20px;
     }
     button:hover{
         color: $mainColor !important;
         transition: none !important;
+    }
+    button.active{
+        background-color: $mainColor !important;
+        color: $secondColor !important;
+        opacity: 1;
     }
 }
 .button-text{
@@ -136,16 +155,12 @@ $textColor:#6d6d6d;
     justify-content: flex-start;
     border-bottom: none !important;
 }
-.nav{
-    button.active{
-        background-color: $mainColor !important;
-        color: $secondColor !important;
-    }
-}
 .tab-pane{
     p{
         color: $textColor;
-        font-size: 17px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
     }
 }
 .main{
@@ -161,9 +176,10 @@ $textColor:#6d6d6d;
 }
 .container-fluid{
     display: flex ;
-    align-items: center;
+    align-items: baseline !important;
     justify-content: flex-start !important;
     padding-left: 5% !important;
+    padding-top: 13px;
 }
 .navigationMain{
     list-style-type: none;
@@ -181,10 +197,163 @@ $textColor:#6d6d6d;
     font-size: 17px !important;
     line-height: 24px !important;
     font-weight: 500 !important;
+    &:hover{
+        opacity: 1 !important;
+    }
 }
 #navbarTogl{
+    position: absolute; right: 4%;top: 20px;
     color: $secondColor !important;
-    border: none;
-    margin-right: -3% !important;
-    margin-top: -7px;
+    height: 50px;
+    width: 50px;
+    i{
+        line-height: 1.5;
+        font-size: 1.4em;
+        border: solid 1px #e0e0e092;
+        border-radius: 50%;        
+    }
+    &:hover i{
+        color: $mainColor !important;
+        border: solid 1px $secondColor;
+        background-color: $secondColor;
+    }
+    &:focus{
+        box-shadow: none !important;
+    }
+}
+.offcanvas{
+    width: 360px !important;
+}
+.nav-item{
+   p{
+        color: $textColor;
+        font-size: 1em;
+        font-weight: 16px;
+        line-height: 24px;
+    } 
+    h5{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22.5px;
+    }
+} 
+.navbar-nav-in-menu{
+    list-style-type: none;
+}
+.nav-link-in-menu{
+    color: $textColor;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 8px 0 20px 0;
+    transition: all .3s ease-out 0s;
+    &:hover{
+        margin-left: 10px;
+        cursor: pointer;
+    }
+}
+.socNet{
+    margin-left: 8%;
+    margin-top: 10%;
+    i{
+        margin: 5% 3% 0 0;
+        border: solid 1px #eee;
+        border-radius: 50%;
+        font-size: 18px;
+        width: 38px;
+        height: 38px;
+        color: #666;
+        padding: 5px 10px 5px 10px;
+        line-height: 1.5;
+    }
+    i:hover{
+        cursor: pointer;
+        background-color: $mainColor;
+        color: $secondColor;
+        border: solid 1px $mainColor;
+    }
+}
+.btn-close{
+    font-size: 20px;
+    &:hover {
+        transform: rotate(90deg) !important;
+        transition: all .3s ease;
+    }    
+}
+.navbar-toggler{
+    position: absolute; top: 20px; right: 10%;
+    .toggler-icon {
+        width: 30px;
+        height: 2px;
+        background-color: $secondColor !important;
+        margin: 5px 0;
+        display: block;
+        position: relative;
+        transition: all .3s ease-out 0s;
+    }
+    .collapsed .toggler-icon{
+        transform: none !important;
+    }
+    .collapsed .toggler-icon:nth-of-type(1) {
+        top: 0px;
+    }
+    .collapsed  .toggler-icon:nth-of-type(2) {
+        display: block;
+    }
+    .toggler-icon:nth-of-type(2) {
+        display: none;
+    }
+    .toggler-icon:nth-of-type(1) {
+        transform: rotate(45deg) ;
+        top: 7px;
+    }
+    .toggler-icon:nth-of-type(3) {
+        transform: rotate(-45deg) ;
+        top: 0px;
+    }
+    .collapsed{
+        border: solid 1px transparent;
+    }
+    &:focus{
+        box-shadow: none !important;
+    }
+}
+#menuRight{
+    display: block;
+}
+#menuMain{
+    display: none;
+}
+.navbar-collapse{
+    padding-left: 3% !important;
+    margin-left: 7%;
+    width: 85%;
+    background-color: $mainColor;
+    position: fixed;top: 5em;
+    z-index: 10;
+}
+.navbar-nav{
+    a{
+        color: $secondColor !important;
+        text-decoration: none; 
+        font-size: 15px !important;   
+    }
+    li{
+        margin-bottom: 2%;
+    }
+}
+.togle-menu{
+    color: $secondColor;
+    border: solid 1px #e4e2e2a5;
+    display: inline-block;
+    position: absolute; top: 20px; right: 10%;
+    font-size: 1.5em;
+    border-radius: 50%;
+    padding: 1px 7px 1px 7px;
+    &:hover{
+        background-color: $secondColor;
+        color: $mainColor;
+        cursor: pointer;
+    }
 }
