@@ -15,6 +15,24 @@ body{
     margin-top: 0;
     background-color: $mainColor;
     z-index: 9;
+   /*  @media all {
+        @media (max-width:70em){
+          padding: 15% 2% 10% 5%;  
+        }
+        @media (max-width:60em){
+            flex-direction: column;
+            padding-left: 10%;
+            padding-right: 10%; 
+        }
+        @media (max-width:50em){
+            margin-top: 5%; 
+        }
+        @media (max-width:40em){
+            margin-top: 15%;
+            padding-left: 0;
+            padding-right: 0; 
+        }
+    } */
 }
 .infoMain{
     width: 47%;
@@ -358,3 +376,5 @@ body{
         cursor: pointer;
     }
 }
+
+

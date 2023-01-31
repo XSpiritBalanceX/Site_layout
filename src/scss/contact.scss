@@ -1,0 +1,132 @@
+$mainColor: #155bd5;
+$secondColor: white;
+$text-color:#6d6d6d;
+$border-color:#e0e0e0;
+$shadow-for-box:0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
+
+%style-for-p{
+    line-height: 24px;
+    font-size: 16px;
+    color: $text-color;
+    font-weight: 400;
+}
+
+.contact-content{
+    background-color: $secondColor;
+    padding: 7% ;
+}
+.contentInContacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.containerWitContact{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.iteminContact{
+    display: flex;
+    flex-direction: row;
+    border: solid 1px $border-color;
+    border-radius: 10px;
+    margin-bottom: 7%;
+    padding: 20px 30px;
+    transition: all .3s ease-out 0s;
+    &:hover{
+        box-shadow: $shadow-for-box;
+    }
+}
+.pictureForContact{
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: $mainColor;
+    color: $secondColor;
+    border: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+.info{
+    h4{
+        font-size: 20px;
+        color: $mainColor;
+        margin-bottom: 10px;
+        line-height: 25px;
+        font-weight: 600;
+    }
+    p{
+        @extend %style-for-p;
+        margin: 0;
+    }
+}
+.formInTouch{
+    text-align: center;
+    width: 67%;
+    padding: 50px 40px;
+    border: solid 1px $border-color;
+    border-radius: 10px;
+    background-color: $secondColor;
+    transition: all .3s ease-out 0s;
+    z-index: 2;
+    &:hover{
+        box-shadow: 0 2px 4px rgba(40,41,61,0.04), 0 8px 16px rgba(96,97,112,0.16);
+    }
+    span{
+        font-size: 20px;
+        color: $mainColor;
+        font-weight: 700;
+        line-height: 30px;
+    }
+    h2{
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 45px;
+        margin-bottom: 10px;
+    }
+    p{
+        width: 70%;
+        @extend %style-for-p;
+        margin: 0 auto 0 auto;
+    }
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    input{
+        width: 48%;
+        padding: 15px 25px;
+        border-radius: 30px;
+        border: solid 1px $border-color;  
+    }
+    textarea{
+        border-radius: 18px;
+        border: solid 1px $border-color;
+    }
+    .btn-submit{
+        background-color: $mainColor;
+        border: transparent;
+        color: white;
+        border-radius: 48px;
+        padding: 12px 24px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        transition: all .3s ease-out 0s;
+    }
+    .btn-submit:hover, .btn-submit:focus{
+        background-color: #1c3ab6;
+    }
+}
+.map-content{
+    margin-top: -150px;
+}
+

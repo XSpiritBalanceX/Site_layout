@@ -1,0 +1,403 @@
+/* @media all and (max-width: 70em){
+    .content-main{
+        padding: 15% 2% 10% 5%;
+    }
+    .person-main{
+        img{
+            width: 28em;
+            height: 23em; 
+        }        
+    }
+    .button-main{
+        width: 70%;
+    }
+    .image-container img:nth-child(2){
+        img:nth-child(2){
+           width: 25em;
+           height: 25em;  
+        }        
+    }
+    .video-content img{
+        width: 95%;
+    }
+    .buttonInWork{    
+        width: 80%;
+    }
+    .fifth-content, .contentInFooter{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .seventh-content, .blog-container ,.contact-content{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .itemInWorks img{
+        height: 67%;
+    }
+    .works-content{
+        height: 62%;
+    }
+    .itemInSeven img{
+        height: 20em;
+    }
+    .eighth-content > div{
+        width: 70%;
+        font-size: 1.03em;
+    }
+    .picture, .contentPicture{
+        height: 13em;
+    }
+    .contentInContacts{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .containerWitContact{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .iteminContact{
+        margin-bottom: 3%;
+        margin-right: 2%;
+        width: 47%;
+    }
+    .formInTouch{
+        width: 100%;
+    }
+    .itemInFooter{
+        width: 29%;
+    }    
+    .minWidt{
+        width: 10% ;
+    }
+}
+
+@media all and (max-width: 60em){
+    #menuRight{
+        display: none !important;
+    }
+    #menuMain{
+        display: block !important;
+    }
+    .togle-menu, .nav{
+        visibility: hidden !important;
+    }
+    .navbar-toggler, #logoComp{
+        visibility: visible;
+    }
+    .content-main{
+        flex-direction: column;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .infoMain{
+        width: 100%;
+    }
+    .infoMain h1{
+        font-size: 2.3em;
+    }
+    .text-main{
+        font-size: 15px;
+    }
+    .button-main{
+        width: 45%;
+    }
+    .person-main{
+        img{
+            margin-top: 5%;
+            width: 48em;
+            height: 35em;
+        }
+    } 
+    .second-content{
+        flex-direction: column;
+    }
+    .image-container {
+        img:nth-child(2){
+            width: 43em;
+            height: 37em;
+        }
+    }
+    .text-container-second{
+        width: 100%; 
+        margin-top: 10%;  
+    }
+    .tab-pane {
+        p{
+            font-size: 15px;
+            width: 93%;
+        }
+    }
+    .third-content{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .contentInService{
+        justify-content: center;
+    }
+    .itemInCard{
+        width: 40%;
+    }
+    .buttonInWork {
+        button{
+            font-size: 14px;
+        }
+    }
+    .fifth-content{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .seventh-content, .blog-container, .contentInFooter{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .contForWors{
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10%;
+    }
+    .itemInWorks{
+        width: 50%;
+        position: relative;
+        margin-bottom: 2%;
+    }
+    .itemInWorks {
+        img{
+            height: 17em;
+        }
+    }
+    .works-content{
+        height: 66%;
+    }
+    .contanForPlan, .contentInSeven, .containerForBlog, .contentInFooter{
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .itemInPlan, .itemInSeven, .itemInBlog, .itemInFooter{
+        width: 45%;
+        margin-bottom: 5%;
+        margin-right: 5%;
+    }
+    .itemInFooter{
+        font-size: 15px;
+    }
+    .eighth-content {
+        > div{
+            width: 65%;
+            font-size: 15px;
+        }
+    }
+    .picture, .contentPicture{
+        height: 15em;
+    }
+    .contentInClients{
+        margin: 0 3% 0 3%;
+    }
+    .contentInContacts{
+        justify-content: center;
+        align-items: center;
+    }
+    .formInTouch, .containerWitContact{
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 50em){
+    .content-main{
+        margin-top: 5%;
+    }
+    .infoMain{
+        width: 80%;
+    }
+    .person-main {
+        img{
+            width: 30em;
+            height: 25em;
+        }
+    }
+    .button-main{
+        width: 75%;
+    }
+    .image-container {
+        img:first-child{
+            left:30px;
+        }
+    }
+    .image-container {
+        img:nth-child(2){
+            width: 30em;
+            height: 30em;
+        }
+    }
+    .second-content{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .text-container-second{
+        margin-left: 15%;
+    }
+    .navWithText{
+        width: 30em;        
+    }
+    .button-text{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .button-text button{
+        margin-left: 0;
+    }
+    .third-content, .seventh-content, .contact-content{
+        padding-left: 13%;
+        padding-right: 13%;
+    }
+    .contentInService, .contanForPlan{
+        display: flex;
+        flex-direction: column;
+    }
+    .itemInCard, .itemInPlan{
+        width: 100%;
+    }
+    .itemInPlan{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .itemInWorks{
+        width: 48%;
+    }
+    .buttonInWork{
+        width: 60%;
+    }
+    .itemInWorks {
+        img{
+            height: 12em;
+        }
+    }
+    .works-content{
+        height: 58%;
+    }
+    .ulPric{
+        margin-left: -50%;
+    }
+    .itemInSeven {
+        img{
+            height: 13em;
+        }
+    }
+    .itemInSeven{
+        width: 45%;
+        height: 16em;
+    }
+    .eighth-content {
+        > div{
+            width: 90%;
+        }
+    }
+    .containerForBlog{
+        flex-direction: column;
+        align-items: center;
+    }
+    .itemInBlog{
+        width: 90%;
+        margin-bottom: 5%;
+        margin-right: 0%;
+    }
+    .picture, .contentPicture{
+        width: 100%;
+        height: 20em;
+    }
+    .containerWitContact{
+        flex-direction: column;
+        width: 100%;
+    }
+    .iteminContact, .formInTouch{
+        width: 100%;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row input{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .contentInFooter{
+        flex-direction: column;
+        align-items: center;
+    }
+    .itemInFooter{
+        width: 100%;
+        text-align: center;
+    }
+    .contentInFooter{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .logoPicture{
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 40em){
+    .content-main{
+        margin-top: 15%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .third-content, .fourth-content, .sixth-content, .seventh-content, .contact-content{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .text-container-second{
+        margin-left: -10%;
+    }
+    .contForWors, .contentInSeven{
+        flex-direction: column;
+        padding: 0;
+    }
+    .itemInWorks, .itemInSeven{
+        width: 100%;
+    }
+    .itemInSeven {
+        img{
+            height: 27em;
+        }
+    }
+    .itemInSeven{
+        height: 30em;
+        margin: 0 0 5% 0;
+    }
+    .works-content{
+        top: 2%;left: 2%;
+        width: 91%;
+        height: 72%;
+    }
+    .itemInWorks {
+        img{
+            height: 23em;
+        }
+    }
+    .buttonInWork{   
+        width: 70%;
+    }
+    .eighth-content, .blog-container, .contenWitClient, .contentInFooter{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .eighth-content {
+        > div{
+            width: 99%;
+        }
+    }
+    .navWithText{
+        width: 28em;
+    }
+    .mainInService {
+        h2{
+            font-size: 2em;
+        }
+    }
+    .mainInService {
+        p{
+            font-size: 15px;
+        }
+    }
+} */

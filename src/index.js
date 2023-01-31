@@ -1,4 +1,4 @@
-import './scss/main.scss';
+import './scss/index.scss';
 import './scss/blog.scss';
 import './scss/contact.scss';
 import './scss/footer.scss';
