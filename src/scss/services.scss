@@ -1,0 +1,115 @@
+$mainColor: #155bd5;
+$secondColor: white;
+$textColor:#6d6d6d;
+
+.third-content{    
+    padding: 10% 5% 10% 5%;
+}
+.mainInService{   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   div{
+        color: $mainColor;
+        font-weight: 600;
+        border: solid 2px $mainColor; 
+        padding: 3px 30px 3px 30px;
+        border-radius: 30px;
+        margin-bottom: 15px;
+    }
+    h2{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 15px;
+    }
+    p{
+        width: 31em;
+        color: $textColor;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 24px;
+    }
+}
+.contentInService{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.itemInCard{
+    border: solid 1px #efefef;
+    border-radius: 10px;
+    width: 31%;
+    padding: 40px 30px;
+    margin: 0 20px 30px 0;
+    p{
+        color: $textColor;
+        font-weight: 400;
+        line-height: 24px;
+        font-size: 17px;
+        width: 98%;
+        border: solid 1px transparent;
+    }
+    h4{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+    &:hover{
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    &:hover .serviIcon{
+        background-color: $mainColor;
+        color: $secondColor;
+    }
+}
+.serviIcon{
+    width: 80px;
+    height: 80px;
+    border: $mainColor solid 2px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: $mainColor;
+    transition: all .3s ease-out 0s;
+}
+.fourth-content{
+    background-color: #fafafa;
+    padding: 10%;
+}
+.video-content{
+    position: relative;
+    margin-top: 20px;
+    border-radius: 10px;
+    img{
+        border-radius: 10px;
+        height: 80%;
+    }
+    i{
+        font-size: 1.8em;
+        font-weight: 100;
+    }
+    a{
+        position: absolute;top:40%; left:46.5%;
+        background-color: $mainColor;
+        color: $secondColor;
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        line-height: 1.55;
+        border: solid 1px $mainColor;
+        font-size: 30px;
+        transition: all .4s ease;
+    }
+    a:hover{
+        cursor: pointer;
+        background-color: $secondColor;
+        border-color: $secondColor;
+        color: $mainColor;
+    }
+}
