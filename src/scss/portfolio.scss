@@ -1,0 +1,130 @@
+$mainColor: #155bd5;
+$secondColor: white;
+$textColor:#6d6d6d;
+
+.fifth-content{
+    background-color: $secondColor;
+    padding: 10% 3% 10% 3%;
+}
+.navWithWorks{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    button{
+        border: none;
+        color: $textColor !important;
+        font-size: 17px;
+        font-weight: 700;
+    }
+}
+.buttonInWork{
+    border-bottom: none !important;
+    display: flex;
+    justify-content: space-around;    
+    width: 60%;
+    button{
+        border: none !important;
+        position: relative;
+        font-weight: 700 !important;
+        font-size: 16px !important;
+        line-height: 48px !important;
+    }
+    button:hover{
+        color: $mainColor !important;
+    }
+    button.active{
+        color: $mainColor !important;
+        background-color: transparent !important;
+        border: none !important;
+        position: relative;
+        opacity: 1;
+    }
+    button.active::before{
+        position: absolute; bottom: 0; left: 0;
+        content: "";
+        height: 4px;
+        width: 100%;
+        background-color: $mainColor;
+        border-radius: 4px;
+        opacity: 1;
+    }
+    button::before{
+        position: absolute ; bottom: 0; left: 0;
+        content: "";
+        height: 4px;
+        width: 100%;
+        background-color: $mainColor;
+        border-radius: 4px ;
+        opacity: 0;
+    }
+    button:hover::before{
+        opacity: 1;
+    }
+}
+.contForWors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5%;
+}
+.itemInWorks{
+  width: 33%;
+  position: relative;
+  margin-bottom: 2%;
+  img{
+        border-radius: 10px;
+        height: 76%;
+        width: 95%;
+        max-width: 100%;
+    }
+    h4{
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 600;
+        line-height: 1.5;
+        margin-top: 15px;
+    }
+    p{
+        color: black;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        width: 97%;
+    }
+    &:hover .works-content{
+        opacity: 1;
+    }
+}
+.works-content{
+    position: absolute;top: 2%;left: 2%;
+    width: 91%;
+    height: 72%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px  $secondColor;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    transition: all .3s ease-out 0s;
+}
+.iconInItem{
+    border: $mainColor solid 1px;
+    background-color: $mainColor;
+    color: $secondColor;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 1.5em;
+    transition: all .4s ease-out 0s;
+    &:hover{
+        background-color: #1c3ab6;
+        border: #1c3ab6 solid 1px;
+        cursor: pointer;
+    }
+}

@@ -2,6 +2,13 @@ $mainColor: #155bd5;
 $secondColor: white;
 $textColor:#6d6d6d;
 
+%style-for-p{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: $textColor;
+}
+
 .third-content{    
     padding: 10% 5% 10% 5%;
 }
@@ -26,10 +33,7 @@ $textColor:#6d6d6d;
     }
     p{
         width: 31em;
-        color: $textColor;
-        font-weight: 400;
-        font-size: 17px;
-        line-height: 24px;
+        @extend %style-for-p;
     }
 }
 .contentInService{
@@ -44,10 +48,7 @@ $textColor:#6d6d6d;
     padding: 40px 30px;
     margin: 0 20px 30px 0;
     p{
-        color: $textColor;
-        font-weight: 400;
-        line-height: 24px;
-        font-size: 17px;
+        @extend %style-for-p;
         width: 98%;
         border: solid 1px transparent;
     }
