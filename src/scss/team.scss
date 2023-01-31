@@ -1,0 +1,224 @@
+$mainColor: #155bd5;
+$secondColor: white;
+
+.seventh-content{
+    background-color: $secondColor;
+    padding: 10% ;
+}
+.contentInSeven{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.itemInSeven{
+    width: 32%;
+    height: 100%;
+    border: solid 1px #efefef;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 0px 1px rgba(40,41,61,0.04), 0px 2px 4px rgba(96,97,112,0.16);
+    img{
+        width: 100%;
+        height: 26em;
+        border-radius: 10px;
+    }
+    &:hover .team-social{
+        visibility: visible;
+        opacity: 1;
+        z-index: -1;
+        height: 120%;
+    }
+    h4{
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 30px;
+        color: black;
+        margin-bottom: -10px;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 10px;
+        color: $mainColor;
+    }
+    &:hover h4, p {
+        color: $secondColor;
+        z-index: 5;
+    }
+}
+.team-content{
+    position: absolute;bottom: 0; left: 0; 
+    border-radius:0 0 10px 10px;   
+    background-color: $secondColor;
+    padding: 20px 0 20px 0;
+    width: 100%;
+    z-index: 5;
+    transition: all .3s ease-out 0s;
+    &::before{
+        position: absolute;top: 0; left: 0;
+        background-color: $mainColor;
+        content: "";
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transition: all .3s ease-out 0s;
+        opacity: 0;
+    }
+}
+.ulInTeam{
+    list-style: none;
+    padding: 10px 20px 6px ;
+    border-radius: 50px;
+    background-color: $secondColor;
+    position: absolute; top: -20px;right: 26%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #6d6d6d;
+    li:hover{
+        color: $mainColor;
+        cursor: pointer;
+    }
+}
+.team-social{
+    background-color: $mainColor;
+    position: absolute;bottom: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 10px 10px;
+    transition: all .3s ease-out 0s;
+    visibility: hidden;
+    opacity: 0;
+}
+.eighth-content{
+    padding: 5% 10% 5% 10%;
+    background: linear-gradient(45deg, $mainColor, #1c3ab6);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &::before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute; left: 0; top: 0;
+        background-image: url(../../public/images/overlay.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        z-index: -1;
+    }
+    > div{
+        width: 48.5%;
+        text-align: center;
+    }
+    h2{
+        color: $secondColor;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 45px;
+    }
+    p{
+        color: $secondColor;
+        font-weight: 400;
+        line-height: 24px;
+        font-size: 16px;
+    }
+    button{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 12px 24px;
+        border-radius: 5px;
+        border: solid 1px $secondColor;
+        color: $secondColor;
+        background-color: transparent;
+    }
+    button:hover{
+        border: solid 1px $secondColor;
+        color: $mainColor;
+        background-color: $secondColor;
+    }
+}
+.customer-container{
+    background-color: #fafafa;
+    padding: 10%;
+    position: relative;
+}
+#carouselExampleIndicators{
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carousel-item{
+    padding: 70px 50px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    height: 20em;
+}
+.carousel-indicators{
+    position: absolute ; bottom: -20%!important;
+    button{
+        background-color: $mainColor !important;
+        border-radius: 5px !important;
+        height: 4px !important;
+        border: solid 1px $mainColor !important;
+        width: 14px !important;
+        transition: all .4s ease !important;
+    }
+    button.active{
+        width: 30px !important;
+    }
+}
+.ballPict{
+    position: absolute;top: 0; left: 40px;
+}
+.ballArrowPict{
+    position: absolute; bottom: -20px; right: -20px;
+}
+.hooks{
+    color: #f5f5f5 !important;
+    font-size: 70px !important;
+    position: absolute; top: 100px; right: 100px;
+}
+.text{
+    font-weight: 500;
+    line-height: 28px;
+    color: #6d6d6d;
+    margin-top: 2%;
+    font-size: 16px;
+    width: 95%;
+}
+.textContent{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    img{
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+    }
+    h4{
+        font-size: 18px;
+        color: black;
+        font-weight: 600;
+        line-height: 22.5px;
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+}
+.deg{
+    color: #6d6d6d;
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 4px;
+    line-height: 17.5px;
+}

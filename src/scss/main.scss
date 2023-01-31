@@ -1,9 +1,10 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap);
 $mainColor: #155bd5;
 $secondColor: white;
 $textColor:#6d6d6d;
 
 body{
-    font-family: "Inter", sans-serif ;
+    font-family: "Inter", sans-serif !important;
 }
 .content-main{
     display: flex;

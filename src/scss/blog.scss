@@ -67,6 +67,10 @@ $secondColor: white;
         font-weight: 500;
     }
 }
+.contenWitClient{
+    background-color: #fafafa;
+    padding: 10%;
+}
 .contentInClients{
     text-align: center;
     display: inline-block;
@@ -75,7 +79,7 @@ $secondColor: white;
 .itemInClients{
     display: inline-block;
     margin: 13px 10px ;
-    background-color: $mainColor;
+    background-color: $secondColor;
     line-height: 100px;
     padding: 8px 25px;
     border-radius: 10px;
