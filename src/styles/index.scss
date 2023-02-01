@@ -15,7 +15,7 @@ body{
     margin-top: 0;
     background-color: $mainColor;
     z-index: 9;
-   /*  @media all {
+    /* @media all {
         @media (max-width:70em){
           padding: 15% 2% 10% 5%;  
         }
@@ -32,7 +32,7 @@ body{
             padding-left: 0;
             padding-right: 0; 
         }
-    } */
+    } */ 
 }
 .infoMain{
     width: 47%;
@@ -54,12 +54,13 @@ body{
 .button-main{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    width: 53%;
+    width: auto;
     div{
         font-weight: 600;
-        font-size: 1.1em;
+        font-size: 14px ;
+        line-height: 21px;
     }
     button{
         height: 3em;
@@ -67,6 +68,7 @@ body{
         color: $mainColor;    
         border: solid 1px $secondColor;
         cursor: pointer;
+        margin-right: 10px;
     }
     button:nth-child(2){
         border-radius: 50%;
@@ -81,6 +83,7 @@ body{
     padding: 0 30px 0 30px;
     line-height: 20px;
     letter-spacing: 1.28px;
+    margin-right: 10px;
 }
 .getStarted:hover{
     background-color: transparent;
@@ -101,7 +104,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10% 10% 10% 10%;
+    padding: 10% 5% 10% 5%;
     align-items: center;
     background-color: #fafafa;
 }
@@ -116,13 +119,14 @@ body{
         width: 35em;
         height: 35em;
         z-index: 2;
+        margin-right: 35px;
     }
 }
 .text-container-second{
     width: 47%;  
     h6{
         position: relative;
-        padding-left: 30px;
+        padding-left: 30px ;
         font-size: 18.4px;
         line-height: 27.6px;
         font-weight: 600;
@@ -155,9 +159,10 @@ body{
         font-size: 16px !important;
         line-height: 24px;
         background-color: #fafafa !important;
+        visibility: visible !important;
     }
-    button:not(:nth-child(1)){
-        margin-left: 20px;
+    button{
+        margin-right: 20px;
     }
     button:hover{
         color: $mainColor !important;
@@ -301,25 +306,16 @@ body{
     }    
 }
 .navbar-toggler{
-    position: absolute; top: 20px; right: 10%;
+    position: absolute; top: 20px; right: 10%; 
     .toggler-icon {
         width: 30px;
         height: 2px;
-        background-color: $secondColor !important;
+        background-color: white !important;
         margin: 5px 0;
         display: block;
         position: relative;
         transition: all .3s ease-out 0s;
-    }
-    .collapsed .toggler-icon{
-        transform: none !important;
-    }
-    .collapsed .toggler-icon:nth-of-type(1) {
-        top: 0px;
-    }
-    .collapsed  .toggler-icon:nth-of-type(2) {
-        display: block;
-    }
+    }   
     .toggler-icon:nth-of-type(2) {
         display: none;
     }
@@ -331,13 +327,23 @@ body{
         transform: rotate(-45deg) ;
         top: 0px;
     }
-    .collapsed{
-        border: solid 1px transparent;
-    }
+    
     &:focus{
         box-shadow: none !important;
     }
 }
+.navbar-toggler.collapsed {
+    border: solid 1px transparent;
+    .toggler-icon{
+        transform: none !important;
+    }
+    .toggler-icon:nth-of-type(1) {
+        top: 0px;
+    }
+    .toggler-icon:nth-of-type(2) {
+        display: block !important;
+    }
+} 
 #menuRight{
     display: block;
 }
