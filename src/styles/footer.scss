@@ -1,23 +1,12 @@
-$mainColor: #155bd5;
-$secondColor: white;
-$text-color:#6d6d6d;
-
-%style-for-p{
-    line-height: 24px;
-    font-size: 16px ;
-    color: $text-color;
-    font-weight: 400;
-}
+@import 'variables';
 
 .footer{
     padding: 100px 0 100px 0;
 }
 .contentInFooter{
     margin: 0 7% 0 7%;
-    display: flex;
-    flex-direction: row;
+    @extend %display-space-between;
     align-items: stretch;
-    justify-content: space-between;
 }
 .logoPicture{
     width: 60%;
@@ -25,8 +14,7 @@ $text-color:#6d6d6d;
     margin-top: -10px;
 }
 .itemInFooter{
-    display: flex;
-    flex-direction: column;
+    @extend %display-column;
     justify-content: left;
     width: 25%;
     p, span{
@@ -49,7 +37,7 @@ $text-color:#6d6d6d;
 .email-footer{
     height: 55px;
     border-radius: 10px;
-    border: solid 1px #e0e0e0;
+    border: solid 1px $border-color;
     padding: 0 65px 0 18px;
     width: 100%;
 }
@@ -69,7 +57,7 @@ $text-color:#6d6d6d;
     position: absolute;top: 15%; right: 3%;
     transition: all .4s ease;
     &:hover{
-        background-color: #1c3ab6;
+        background-color: $border-color-blue;
     }
 }
 .button-go-to-top{    

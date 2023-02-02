@@ -1,14 +1,11 @@
-$mainColor: #155bd5;
-$secondColor: white;
+@import 'variables';
 
 .blog-container{
     background-color: $secondColor;
     padding: 10%;
 }
 .containerForBlog{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @extend %display-space-between;
 }
 .itemInBlog{
     width: 32%; 
@@ -22,7 +19,7 @@ $secondColor: white;
         color: $mainColor;
     }  
     p{
-        color: #6d6d6d;
+        color: $textColor;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
@@ -44,8 +41,7 @@ $secondColor: white;
     border-radius: 5px; 
     overflow: hidden;
     height: 18em;
-    display: flex;
-    justify-content: center;
+    @extend %display-center;
 }
 
 .meta-conetn{
@@ -68,7 +64,7 @@ $secondColor: white;
     }
 }
 .contenWitClient{
-    background-color: #fafafa;
+    background-color: $background-color-grey;
     padding: 10%;
 }
 .contentInClients{

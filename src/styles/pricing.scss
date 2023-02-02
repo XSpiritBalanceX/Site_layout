@@ -1,20 +1,14 @@
-$mainColor: #155bd5;
-$secondColor: white;
-$textColor:#6d6d6d;
-$border-color:#1c3ab6;
-$shadow-for-box:0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
+@import 'variables';
 
 .sixth-content{
-    background-color: #fafafa;
+    background-color: $background-color-grey;
     padding: 10% 5%;
 }
 .contanForPlan{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @extend %display-space-between;
 }
 .itemInPlan{
-    border: solid 1px #efefef;
+    border: solid 1px $border-color-grey;
     width: 32%;
     padding: 3%;
     border-radius: 10px;
@@ -52,10 +46,10 @@ $shadow-for-box:0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 11
         background-color: transparent;
     }
     button:hover{
-        border: $border-color solid 1px;
+        border: $border-color-blue solid 1px;
         border-radius: 5px;
         color: $secondColor;
-        background-color: $border-color;
+        background-color: $border-color-blue;
     }
 }
 .doll{

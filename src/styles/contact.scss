@@ -1,33 +1,18 @@
-$mainColor: #155bd5;
-$secondColor: white;
-$text-color:#6d6d6d;
-$border-color:#e0e0e0;
-$shadow-for-box:0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
-
-%style-for-p{
-    line-height: 24px;
-    font-size: 16px;
-    color: $text-color;
-    font-weight: 400;
-}
+@import 'variables';
 
 .contact-content{
     background-color: $secondColor;
     padding: 7% ;
 }
 .contentInContacts{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @extend %display-space-between;
 }
 .containerWitContact{
-    display: flex;
-    flex-direction: column;
+    @extend %display-column;
     width: 30%;
 }
 .iteminContact{
-    display: flex;
-    flex-direction: row;
+    @extend %display-row;
     border: solid 1px $border-color;
     border-radius: 10px;
     margin-bottom: 7%;
@@ -45,9 +30,7 @@ $shadow-for-box:0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 11
     color: $secondColor;
     border: transparent;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %display-center;
     margin-right: 25px;
 }
 .info{
@@ -94,13 +77,10 @@ $shadow-for-box:0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 11
     }
 }
 form{
-    display: flex;
-    flex-direction: column;
+    @extend %display-column;
 }
 .row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @extend %display-space-between;
     input{
         width: 48%;
         padding: 15px 25px;
@@ -123,7 +103,7 @@ form{
         transition: all .3s ease-out 0s;
     }
     .btn-submit:hover, .btn-submit:focus{
-        background-color: #1c3ab6;
+        background-color: $border-color-blue;
     }
 }
 .map-content{

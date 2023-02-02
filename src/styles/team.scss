@@ -1,19 +1,16 @@
-$mainColor: #155bd5;
-$secondColor: white;
+@import 'variables';
 
 .seventh-content{
     background-color: $secondColor;
     padding: 10% ;
 }
 .contentInSeven{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @extend %display-space-between;
 }
 .itemInSeven{
     width: 32%;
     height: 100%;
-    border: solid 1px #efefef;
+    border: solid 1px $border-color-grey;
     border-radius: 10px;
     position: relative;
     box-shadow: 0px 0px 1px rgba(40,41,61,0.04), 0px 2px 4px rgba(96,97,112,0.16);
@@ -77,11 +74,10 @@ $secondColor: white;
     background-color: $secondColor;
     position: absolute; top: -20px;right: 26%;
     width: 50%;
-    display: flex;
-    flex-direction: row;
+    @extend %display-row;
     justify-content: space-around;
     align-items: center;
-    color: #6d6d6d;
+    color: $textColor;
     li:hover{
         color: $mainColor;
         cursor: pointer;
@@ -99,11 +95,10 @@ $secondColor: white;
 }
 .eighth-content{
     padding: 5% 10% 5% 10%;
-    background: linear-gradient(45deg, $mainColor, #1c3ab6);
+    background: linear-gradient(45deg, $mainColor, $border-color-blue);
     position: relative;
     z-index: 2;
-    display: flex;
-    flex-direction: column;
+    @extend %display-column;
     justify-content: center;
     align-items: center;
     &::before{
@@ -123,9 +118,7 @@ $secondColor: white;
     }
     h2{
         color: $secondColor;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 45px;
+        @extend %style-for-h2;
     }
     p{
         color: $secondColor;
@@ -150,7 +143,7 @@ $secondColor: white;
     }
 }
 .customer-container{
-    background-color: #fafafa;
+    background-color: $background-color-grey;
     padding: 10%;
     position: relative;
 }
@@ -162,7 +155,7 @@ $secondColor: white;
 }
 .carousel-item{
     padding: 70px 50px;
-    background-color: white;
+    background-color: $secondColor;
     border-radius: 5px;
     position: relative;
     height: 20em;
@@ -195,7 +188,7 @@ $secondColor: white;
 .text{
     font-weight: 500;
     line-height: 28px;
-    color: #6d6d6d;
+    color: $textColor;
     margin-top: 2%;
     font-size: 16px;
     width: 95%;
@@ -203,8 +196,7 @@ $secondColor: white;
     position: relative;
 }
 .textContent{
-    display: flex;
-    flex-direction: row;
+    @extend %display-row;
     margin-top: 5%;
     img{
         height: 70px;
@@ -221,7 +213,7 @@ $secondColor: white;
     }
 }
 .deg{
-    color: #6d6d6d;
+    color: $textColor;
     display: block;
     font-size: 15px;
     font-weight: 400;
