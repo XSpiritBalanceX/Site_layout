@@ -88,7 +88,9 @@ body{
     position: relative;
     z-index: 2;
     img:first-child{
-        position: absolute;top: -28px;left:-30px;
+        position: absolute;
+        top: -28px;
+        left:-30px;
         z-index: -1;
     }
     img:nth-child(2){
@@ -200,7 +202,9 @@ body{
     }
 }
 #navbarTogl{
-    position: absolute; right: 4%;top: 20px;
+    position: absolute; 
+    right: 4%;
+    top: 20px;
     color: $secondColor !important;
     height: 50px;
     width: 50px;
@@ -280,7 +284,9 @@ body{
     }    
 }
 .navbar-toggler{
-    position: absolute; top: 20px; right: 10%; 
+    position: absolute; 
+    top: 20px; 
+    right: 10%; 
     .toggler-icon {
         width: 30px;
         height: 2px;
@@ -346,7 +352,9 @@ body{
     color: $secondColor;
     border: solid 1px #e4e2e2a5;
     display: inline-block;
-    position: absolute; top: 20px; right: 10%;
+    position: absolute; 
+    top: 20px; 
+    right: 10%;
     font-size: 1.5em;
     border-radius: 50%;
     padding: 1px 7px 1px 7px;

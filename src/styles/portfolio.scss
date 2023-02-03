@@ -37,7 +37,9 @@
         opacity: 1;
     }
     button.active::before{
-        position: absolute; bottom: 0; left: 0;
+        position: absolute; 
+        bottom: 0; 
+        left: 0;
         content: "";
         height: 4px;
         width: 100%;
@@ -46,7 +48,9 @@
         opacity: 1;
     }
     button::before{
-        position: absolute ; bottom: 0; left: 0;
+        position: absolute; 
+        bottom: 0; 
+        left: 0;
         content: "";
         height: 4px;
         width: 100%;
@@ -93,7 +97,9 @@
     }
 }
 .works-content{
-    position: absolute;top: 2%;left: 2%;
+    position: absolute;
+    top: 2%;
+    left: 2%;
     width: 91%;
     height: 72%;
     @extend %display-row;
