@@ -1,103 +1,103 @@
-@import 'variables';
+@import "variables";
 
-.third-content{    
+.third-content {
     padding: 10% 5% 10% 5%;
 }
-.mainInService{   
-   @extend %display-column;
-   align-items: center;
-   text-align: center;
-   div{
-        color: $mainColor;
+.mainInService {
+    @extend %display-column;
+    align-items: center;
+    text-align: center;
+    div {
+        color: map-get($theme-colors, "mainColor");
         font-weight: 600;
-        border: solid 2px $mainColor; 
+        border: solid 2px map-get($theme-colors, "mainColor");
         padding: 3px 30px 3px 30px;
         border-radius: 30px;
         margin-bottom: 15px;
     }
-    h2{
+    h2 {
         @extend %style-for-h2;
         margin-bottom: 15px;
     }
-    p{
+    p {
         width: 31em;
         @extend %style-for-p;
     }
 }
-.contentInService{
+.contentInService {
     @extend %display-row;
     flex-wrap: wrap;
 }
-.itemInCard{
-    border: solid 1px $border-color-grey;
+.itemInCard {
+    border: solid 1px map-get($theme-colors, "border-color-grey");
     border-radius: 10px;
     width: 31%;
     padding: 40px 30px;
     margin: 0 20px 30px 0;
-    p{
+    p {
         @extend %style-for-p;
         width: 98%;
         border: solid 1px transparent;
     }
-    h4{
+    h4 {
         font-weight: 600;
         font-size: 20px;
         line-height: 25px;
         margin-bottom: 10px;
     }
-    &:hover{
-        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    &:hover {
+        box-shadow: map-get($theme-colors, "shadow-for-services-hover");
     }
-    &:hover .serviIcon{
-        background-color: $mainColor;
-        color: $secondColor;
+    &:hover .serviIcon {
+        background-color: map-get($theme-colors, "mainColor");
+        color: map-get($theme-colors, "secondColor");
     }
 }
-.serviIcon{
+.serviIcon {
     width: 80px;
     height: 80px;
-    border: $mainColor solid 2px;
+    border: map-get($theme-colors, "mainColor") solid 2px;
     border-radius: 50%;
     margin-bottom: 25px;
     @extend %display-center;
     font-size: 40px;
-    color: $mainColor;
-    transition: all .3s ease-out 0s;
+    color: map-get($theme-colors, "mainColor");
+    transition: all 0.3s ease-out 0s;
 }
-.fourth-content{
-    background-color: $background-color-grey;
+.fourth-content {
+    background-color: map-get($theme-colors, "background-color-grey");
     padding: 10%;
 }
-.video-content{
+.video-content {
     position: relative;
     margin-top: 20px;
     border-radius: 10px;
-    img{
+    img {
         border-radius: 10px;
         height: 80%;
     }
-    i{
+    i {
         font-size: 1.8em;
         font-weight: 100;
     }
-    a{
+    a {
         position: absolute;
-        top:40%; 
-        left:46.5%;
-        background-color: $mainColor;
-        color: $secondColor;
+        top: 40%;
+        left: 46.5%;
+        background-color: map-get($theme-colors, "mainColor");
+        color: map-get($theme-colors, "secondColor");
         width: 3em;
         height: 3em;
         border-radius: 50%;
         line-height: 1.55;
-        border: solid 1px $mainColor;
+        border: solid 1px map-get($theme-colors, "mainColor");
         font-size: 30px;
-        transition: all .4s ease;
+        transition: all 0.4s ease;
     }
-    a:hover{
+    a:hover {
         cursor: pointer;
-        background-color: $secondColor;
-        border-color: $secondColor;
-        color: $mainColor;
+        background-color: map-get($theme-colors, "secondColor");
+        border-color: map-get($theme-colors, "secondColor");
+        color: map-get($theme-colors, "mainColor");
     }
 }

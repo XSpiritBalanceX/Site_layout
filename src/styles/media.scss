@@ -1,425 +1,455 @@
-@media all and (max-width: 70em){
-    .content-main{
+@media all and (max-width: 70em) {
+    .content-main {
         padding: 15% 2% 10% 5%;
     }
-    .person-main{
-        img{
+    .person-main {
+        img {
             width: 28em;
-            height: 23em; 
-        }        
+            height: 23em;
+        }
     }
-    .image-container{
-        img:nth-child(2){
-           width: 25em;
-           height: 25em;  
-        }        
+    .image-container {
+        img:nth-child(2) {
+            width: 25em;
+            height: 25em;
+        }
     }
     .video-content {
-        img{
+        img {
             width: 95%;
         }
     }
-    .buttonInWork{    
+    .buttonInWork {
         width: 80% !important;
-        button{
+        button {
             visibility: visible !important;
         }
     }
-    .fifth-content, .contentInFooter{
+    .fifth-content,
+    .contentInFooter {
         padding-left: 0% !important;
         padding-right: 0% !important;
     }
-    .seventh-content, .blog-container ,.contact-content{
+    .seventh-content,
+    .blog-container,
+    .contact-content {
         padding-left: 3% !important;
         padding-right: 3% !important;
     }
     .itemInWorks {
         margin-bottom: 5% !important;
-        img{
+        img {
             height: 67%;
         }
     }
-    .works-content{
+    .works-content {
         height: 62%;
     }
     .itemInSeven {
-        img{
+        img {
             height: 20em;
         }
     }
     .eighth-content {
-        > div{
+        > div {
             width: 70% !important;
         }
     }
-    .picture, .contentPicture{
+    .picture,
+    .contentPicture {
         height: 13em;
     }
-    .contentInContacts{
+    .contentInContacts {
         flex-direction: column;
         justify-content: space-between;
     }
-    .containerWitContact{
+    .containerWitContact {
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
     }
-    .iteminContact{
+    .iteminContact {
         margin-bottom: 3% !important;
         margin-right: 2%;
         width: 47% !important;
     }
-    .formInTouch{
+    .formInTouch {
         width: 100%;
     }
-    .itemInFooter{
+    .itemInFooter {
         width: 29%;
-    }    
-    .minWidt{
-        width: 10% ;
+    }
+    .minWidt {
+        width: 10%;
     }
 }
 
-@media all and (max-width: 60em){
-    #menuRight{
+@media all and (max-width: 60em) {
+    #menuRight {
         display: none !important;
     }
-    #menuMain{
+    #menuMain {
         display: block !important;
     }
-    .togle-menu, .nav{
+    .togle-menu,
+    .nav {
         visibility: hidden !important;
     }
-    #logoComp{
+    #logoComp {
         opacity: 1 !important;
     }
-    .navbar-toggler, #logoComp{
+    .navbar-toggler,
+    #logoComp {
         visibility: visible;
     }
-    .content-main{
+    .content-main {
         flex-direction: column;
         padding-left: 10%;
         padding-right: 10%;
     }
-    .infoMain{
+    .infoMain {
         width: 100%;
     }
-    .infoMain h1{
+    .infoMain h1 {
         font-size: 2.3em;
     }
-    .text-main{
+    .text-main {
         font-size: 15px;
     }
-    .person-main{
-        img{
+    .person-main {
+        img {
             margin-top: 5%;
             width: 48em;
             height: 35em;
         }
-    } 
-    .second-content{
+    }
+    .second-content {
         flex-direction: column;
     }
     .image-container {
-        img:nth-child(2){
+        img:nth-child(2) {
             width: 43em;
             height: 37em;
         }
     }
-    .text-container-second{
-        width: 100%; 
-        margin-top: 10%;  
+    .text-container-second {
+        width: 100%;
+        margin-top: 10%;
     }
     .tab-pane {
-        p{
+        p {
             width: 100%;
         }
     }
-    .third-content{
+    .third-content {
         padding-left: 3%;
         padding-right: 3%;
     }
-    .contentInService{
+    .contentInService {
         justify-content: center;
     }
-    .itemInCard{
+    .itemInCard {
         width: 43% !important;
     }
     .buttonInWork {
-        button{
+        button {
             font-size: 14px;
         }
     }
-    .fifth-content{
+    .fifth-content {
         padding-left: 5%;
         padding-right: 5%;
     }
-    .seventh-content, .blog-container, .contentInFooter{
+    .seventh-content,
+    .blog-container,
+    .contentInFooter {
         padding-left: 10% !important;
         padding-right: 10% !important;
     }
-    .contForWors{
+    .contForWors {
         justify-content: space-between;
         align-items: center;
         padding-left: 10%;
     }
-    .itemInWorks{
+    .itemInWorks {
         width: 50% !important;
         position: relative;
         margin-bottom: 5% !important;
     }
     .itemInWorks {
-        img{
+        img {
             height: 17em;
         }
     }
-    .works-content{
+    .works-content {
         height: 66% !important;
     }
-    .contanForPlan, .contentInSeven, .containerForBlog, .contentInFooter{
+    .contanForPlan,
+    .contentInSeven,
+    .containerForBlog,
+    .contentInFooter {
         flex-wrap: wrap;
         justify-content: start;
     }
-    .itemInPlan, .itemInSeven, .itemInBlog, .itemInFooter{
+    .itemInPlan,
+    .itemInSeven,
+    .itemInBlog,
+    .itemInFooter {
         width: 45% !important;
         margin-bottom: 5%;
         margin-right: 5%;
     }
-    .itemInFooter{
+    .itemInFooter {
         font-size: 15px;
     }
     .eighth-content {
-        > div{
+        > div {
             width: 65%;
             font-size: 15px;
         }
     }
-    .iteminContact{
+    .iteminContact {
         flex-direction: column;
     }
-    .pictureForContact{
+    .pictureForContact {
         margin-bottom: 20px;
     }
-    .picture, .contentPicture{
+    .picture,
+    .contentPicture {
         height: 15em;
     }
-    .contentInClients{
+    .contentInClients {
         margin: 0 3% 0 3%;
     }
-    .contentInContacts{
+    .contentInContacts {
         justify-content: center;
         align-items: center;
     }
-    .formInTouch, .containerWitContact{
+    .formInTouch,
+    .containerWitContact {
         width: 80%;
     }
 }
 
-@media all and (max-width: 50em){
-    .content-main{
+@media all and (max-width: 50em) {
+    .content-main {
         margin-top: 5%;
     }
-    .infoMain{
+    .infoMain {
         width: 80% !important;
     }
     .person-main {
-        img{
+        img {
             width: 30em;
             height: 25em;
         }
     }
     .image-container {
-        img:first-child{
-            left:30px;
+        img:first-child {
+            left: 30px;
         }
     }
     .image-container {
-        img:nth-child(2){
+        img:nth-child(2) {
             width: 30em;
             height: 30em;
         }
     }
-    .second-content{
+    .second-content {
         padding-left: 10%;
         padding-right: 10%;
     }
-    .text-container-second{
+    .text-container-second {
         margin-left: 15%;
     }
-    .navWithText{
-        width: 30em;        
+    .navWithText {
+        width: 30em;
     }
-    .button-text{
+    .button-text {
         flex-direction: column !important;
         justify-content: center;
     }
-    .video-content{
-        i{
+    .video-content {
+        i {
             font-size: 1.3em !important;
             line-height: 1.8 !important;
         }
-        a{
+        a {
             position: absolute;
-            top:36% !important; 
-            left:43% !important;
+            top: 36% !important;
+            left: 43% !important;
             width: 2.4em !important;
             height: 2.4em !important;
         }
     }
-    .third-content, .seventh-content, .contact-content{
+    .third-content,
+    .seventh-content,
+    .contact-content {
         padding-left: 13% !important;
         padding-right: 13% !important;
     }
-    .contentInService, .contanForPlan{
+    .contentInService,
+    .contanForPlan {
         display: flex;
         flex-direction: column;
     }
-    .itemInCard, .itemInPlan{
+    .itemInCard,
+    .itemInPlan {
         width: 100% !important;
     }
-    .itemInPlan{
+    .itemInPlan {
         padding-top: 10%;
         padding-bottom: 10%;
     }
-    .itemInWorks{
+    .itemInWorks {
         width: 48% !important;
     }
-    .buttonInWork{
+    .buttonInWork {
         width: 60% !important;
     }
     .itemInWorks {
-        img{
+        img {
             height: 14em !important;
         }
     }
-    .works-content{
+    .works-content {
         height: 61% !important;
     }
-    .ulPric{
+    .ulPric {
         margin-left: -50%;
     }
     .itemInSeven {
         width: 45% !important;
         height: 16em !important;
-        img{
+        img {
             height: 13em !important;
         }
     }
     .eighth-content {
-        > div{
+        > div {
             width: 99% !important;
         }
     }
-    .containerForBlog{
+    .containerForBlog {
         flex-direction: column;
         align-items: center;
     }
-    .itemInBlog{
+    .itemInBlog {
         width: 85% !important;
         margin-bottom: 5%;
         margin-right: 0%;
     }
-    .picture, .contentPicture{
+    .picture,
+    .contentPicture {
         width: 100% !important;
         height: 20em;
     }
-    .customer-container{
+    .customer-container {
         padding-left: 5% !important;
         padding-right: 5% !important;
     }
-    #carouselExampleIndicators{
+    #carouselExampleIndicators {
         width: 100% !important;
     }
-    .containerWitContact{
+    .containerWitContact {
         flex-direction: column;
         width: 100%;
     }
-    .iteminContact, .formInTouch{
+    .iteminContact,
+    .formInTouch {
         width: 100% !important;
     }
-    .row{
+    .row {
         flex-direction: column !important;
     }
-    .row input{
+    .row input {
         width: 100%;
         margin-bottom: 5%;
     }
-    .contentInFooter{
+    .contentInFooter {
         flex-direction: column;
         align-items: center;
         padding-left: 5% !important;
         padding-right: 5% !important;
     }
-    .itemInFooter{
+    .itemInFooter {
         width: 100% !important;
         text-align: center;
     }
-    .logoPicture{
+    .logoPicture {
         width: 100%;
     }
 }
 
-@media all and (max-width: 40em){
-    .content-main{
+@media all and (max-width: 40em) {
+    .content-main {
         margin-top: 10%;
         padding-left: 0;
         padding-right: 0;
     }
-    .third-content, .fourth-content, .sixth-content, .seventh-content{
+    .third-content,
+    .fourth-content,
+    .sixth-content,
+    .seventh-content {
         padding-left: 5% !important;
         padding-right: 5% !important;
     }
-    .text-container-second{
+    .text-container-second {
         margin-left: -10%;
     }
-    .contForWors, .contentInSeven{
+    .contForWors,
+    .contentInSeven {
         flex-direction: column !important;
         padding: 0;
     }
-    .itemInWorks, .itemInSeven{
+    .itemInWorks,
+    .itemInSeven {
         width: 100% !important;
     }
     .itemInSeven {
         height: 30em !important;
         margin: 0 0 5% 0;
-        img{
+        img {
             height: 27em !important;
         }
     }
-    .works-content{
-        top: 2%;left: 2%;
+    .works-content {
+        top: 2%;
+        left: 2%;
         width: 91% !important;
         height: 75% !important;
     }
     .itemInWorks {
-        img{
+        img {
             height: 23em !important;
         }
     }
-    .buttonInWork{   
+    .buttonInWork {
         width: 70%;
     }
-    .eighth-content, .blog-container, .contenWitClient, .contentInFooter{
+    .eighth-content,
+    .blog-container,
+    .contenWitClient,
+    .contentInFooter {
         padding-left: 1% !important;
         padding-right: 1% !important;
     }
     .eighth-content {
-        > div{
+        > div {
             width: 99%;
         }
     }
-    .navWithText{
+    .navWithText {
         width: 28em;
     }
     .mainInService {
-        h2{
+        h2 {
             font-size: 2em;
         }
     }
     .mainInService {
-        p{
+        p {
             font-size: 15px;
         }
     }
-    
-} 
+}

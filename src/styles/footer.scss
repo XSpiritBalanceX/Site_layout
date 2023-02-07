@@ -1,82 +1,85 @@
-@import 'variables';
+@import "variables";
 
-.footer{
+.footer {
     padding: 100px 0 100px 0;
 }
-.contentInFooter{
+.contentInFooter {
     margin: 0 7% 0 7%;
     @extend %display-space-between;
     align-items: stretch;
 }
-.logoPicture{
+.logoPicture {
     width: 60%;
     height: 3em;
     margin-top: -10px;
 }
-.itemInFooter{
+.itemInFooter {
     @extend %display-column;
     justify-content: left;
     width: 25%;
-    p, span{
+    p,
+    span {
         @extend %style-for-p;
     }
-    h5{
+    h5 {
         font-weight: 700;
         font-size: 20px;
         line-height: 25px;
     }
-    a{
+    a {
         text-decoration: none;
         cursor: pointer;
         @extend %style-for-p;
     }
 }
-.minWidt{
-    width: 15% ;
+.minWidt {
+    width: 15%;
 }
-.email-footer{
+.email-footer {
     height: 55px;
     border-radius: 10px;
-    border: solid 1px $border-color;
+    border: solid 1px map-get($theme-colors, "border-color");
     padding: 0 65px 0 18px;
     width: 100%;
 }
-.contanerForSubsc{
+.contanerForSubsc {
     position: relative;
     width: 100%;
 }
-.btn-footer{
+.btn-footer {
     height: 40px;
     width: 40px;
-    background-color: $mainColor;
+    background-color: map-get($theme-colors, "mainColor");
     text-align: center;
-    color: $secondColor;
+    color: map-get($theme-colors, "secondColor");
     border: transparent;
     border-radius: 5px;
     line-height: 42px;
     position: absolute;
-    top: 15%; 
+    top: 15%;
     right: 3%;
-    transition: all .4s ease;
-    &:hover{
-        background-color: $border-color-blue;
+    transition: all 0.4s ease;
+    &:hover {
+        background-color: map-get($theme-colors, "border-color-blue");
     }
 }
-.button-go-to-top{    
-    position: fixed; bottom: 6%;right: 3%;
+.button-go-to-top {
+    position: fixed;
+    bottom: 6%;
+    right: 3%;
     font-size: 20px;
     padding: 7px 13px 7px 13px;
     border-radius: 5px;
-    border: solid 1px $mainColor;
-    background-color: $mainColor;
+    border: solid 1px map-get($theme-colors, "mainColor");
+    background-color: map-get($theme-colors, "mainColor");
     z-index: 1;
-    a{
-        color: $secondColor;
+    a {
+        color: map-get($theme-colors, "secondColor");
     }
-    &:hover{
+    &:hover {
         cursor: pointer;
         background-color: rgb(16, 16, 16);
         bottom: 7%;
-        transition: all .4s ease;
+        transition: all 0.4s ease;
     }
-} 
+}

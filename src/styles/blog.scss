@@ -1,94 +1,94 @@
-@import 'variables';
+@import "variables";
 
-.blog-container{
-    background-color: $secondColor;
+.blog-container {
+    background-color: map-get($theme-colors, "secondColor");
     padding: 10%;
 }
-.containerForBlog{
+.containerForBlog {
     @extend %display-space-between;
 }
-.itemInBlog{
-    width: 32%; 
-    h4{
+.itemInBlog {
+    width: 32%;
+    h4 {
         font-weight: 600;
         font-size: 24px;
-        line-height: 30px;        
+        line-height: 30px;
     }
-    h4:hover{
+    h4:hover {
         cursor: pointer;
-        color: $mainColor;
-    }  
-    p{
-        color: $textColor;
+        color: map-get($theme-colors, "mainColor");
+    }
+    p {
+        color: map-get($theme-colors, "textColor");
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
     }
 }
-.picture{
+.picture {
     width: 25em;
     height: 18em;
     border-radius: 5px;
-    transition: all .5s ease-out;
+    transition: all 0.5s ease-out;
 }
-.itemInBlog:hover .picture{ 
+.itemInBlog:hover .picture {
     overflow: hidden;
-    transform: skew(-2deg,2deg) scale(1.1);
-    cursor: pointer;   
+    transform: skew(-2deg, 2deg) scale(1.1);
+    cursor: pointer;
 }
-.contentPicture{
+.contentPicture {
     position: relative;
-    border-radius: 5px; 
+    border-radius: 5px;
     overflow: hidden;
     height: 18em;
     @extend %display-center;
 }
 
-.meta-conetn{
+.meta-conetn {
     position: absolute;
-    bottom: 20px; 
+    bottom: 20px;
     right: 15px;
     display: inline-block;
-    border: $mainColor solid 1px;
-    background-color: $mainColor;
+    border: map-get($theme-colors, "mainColor") solid 1px;
+    background-color: map-get($theme-colors, "mainColor");
     border-radius: 30px;
     padding: 6px 15px 6px 7px;
-    img{
+    img {
         width: 28px;
         height: 28px;
         border-radius: 50%;
     }
-    span{
-        color: $secondColor;
+    span {
+        color: map-get($theme-colors, "secondColor");
         margin-left: 10px;
         font-size: 10px;
         font-weight: 500;
     }
 }
-.contenWitClient{
-    background-color: $background-color-grey;
+.contenWitClient {
+    background-color: map-get($theme-colors, "background-color-grey");
     padding: 10%;
 }
-.contentInClients{
+.contentInClients {
     text-align: center;
     display: inline-block;
     margin: 0 15% 0 15%;
 }
-.itemInClients{
+.itemInClients {
     display: inline-block;
-    margin: 13px 10px ;
-    background-color: $secondColor;
+    margin: 13px 10px;
+    background-color: map-get($theme-colors, "secondColor");
     line-height: 100px;
     padding: 8px 25px;
     border-radius: 10px;
-    border: solid 1px #eee;
-    transition: all .4s ease-out 0s;
-    img{
+    border: solid 1px map-get($theme-colors, "color-in-blog-border");
+    transition: all 0.4s ease-out 0s;
+    img {
         max-width: 170px;
     }
 }
-.itemInClients:hover{
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.041);
+.itemInClients:hover {
+    box-shadow: map-get($theme-colors, "shadow-for-blog-hover");
     transform: translateY(-5px);
     cursor: pointer;
 }

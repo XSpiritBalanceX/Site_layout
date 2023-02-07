@@ -1,226 +1,230 @@
-@import 'variables';
+@import "variables";
 
-.seventh-content{
-    background-color: $secondColor;
-    padding: 10% ;
+.seventh-content {
+    background-color: map-get($theme-colors, "secondColor");
+    padding: 10%;
 }
-.contentInSeven{
+.contentInSeven {
     @extend %display-space-between;
 }
-.itemInSeven{
+.itemInSeven {
     width: 32%;
     height: 100%;
-    border: solid 1px $border-color-grey;
+    border: solid 1px map-get($theme-colors, "border-color-grey");
     border-radius: 10px;
     position: relative;
-    box-shadow: 0px 0px 1px rgba(40,41,61,0.04), 0px 2px 4px rgba(96,97,112,0.16);
-    img{
+    box-shadow: map-get($theme-colors, "shadow-for-team");
+    img {
         width: 100%;
         height: 26em;
         border-radius: 10px;
     }
-    &:hover .team-social{
+    &:hover .team-social {
         visibility: visible;
         opacity: 1;
         z-index: -1;
         height: 120%;
     }
-    h4{
+    h4 {
         font-size: 22px;
         font-weight: 600;
         line-height: 30px;
         color: black;
         margin-bottom: -10px;
     }
-    p{
+    p {
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
         margin-top: 10px;
-        color: $mainColor !important;
+        color: map-get($theme-colors, "mainColor") !important;
     }
-    &:hover h4{
-        color: $secondColor !important;
+    &:hover h4 {
+        color: map-get($theme-colors, "secondColor") !important;
         z-index: 5;
     }
     &:hover p {
-        color: $secondColor !important;
+        color: map-get($theme-colors, "secondColor") !important;
         z-index: 5;
     }
 }
-.team-content{
+.team-content {
     position: absolute;
-    bottom: 0; 
-    left: 0; 
-    border-radius:0 0 10px 10px;   
-    background-color: $secondColor;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 10px 10px;
+    background-color: map-get($theme-colors, "secondColor");
     padding: 20px 0 20px 0;
     width: 100%;
     z-index: 5;
-    transition: all .3s ease-out 0s;
-    &::before{
+    transition: all 0.3s ease-out 0s;
+    &::before {
         position: absolute;
-        top: 0; 
+        top: 0;
         left: 0;
-        background-color: $mainColor;
+        background-color: map-get($theme-colors, "mainColor");
         content: "";
         width: 100%;
         height: 100%;
         z-index: -1;
-        transition: all .3s ease-out 0s;
+        transition: all 0.3s ease-out 0s;
         opacity: 0;
     }
 }
-.ulInTeam{
+.ulInTeam {
     list-style: none;
-    padding: 10px 20px 6px ;
+    padding: 10px 20px 6px;
     border-radius: 50px;
-    background-color: $secondColor;
-    position: absolute; 
+    background-color: map-get($theme-colors, "secondColor");
+    position: absolute;
     top: -20px;
     right: 26%;
     width: 50%;
     @extend %display-row;
     justify-content: space-around;
     align-items: center;
-    color: $textColor;
-    li:hover{
-        color: $mainColor;
+    color: map-get($theme-colors, "textColor");
+    li:hover {
+        color: map-get($theme-colors, "mainColor");
         cursor: pointer;
     }
 }
-.team-social{
-    background-color: $mainColor;
+.team-social {
+    background-color: map-get($theme-colors, "mainColor");
     position: absolute;
-    bottom: 0; 
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border-radius: 0 0 10px 10px;
-    transition: all .3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
     visibility: hidden;
     opacity: 0;
 }
-.eighth-content{
+.eighth-content {
     padding: 5% 10% 5% 10%;
-    background: linear-gradient(45deg, $mainColor, $border-color-blue);
+    background: linear-gradient(
+        45deg,
+        map-get($theme-colors, "mainColor"),
+        map-get($theme-colors, "border-color-blue")
+    );
     position: relative;
     z-index: 2;
     @extend %display-column;
     justify-content: center;
     align-items: center;
-    &::before{
+    &::before {
         content: "";
         height: 100%;
         width: 100%;
-        position: absolute; 
-        left: 0; 
+        position: absolute;
+        left: 0;
         top: 0;
-        background-image: url(../../public/images/overlay.png);
+        background-image: $image-in-team-section;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top;
         z-index: -1;
     }
-    > div{
+    > div {
         width: 48.5%;
         text-align: center;
     }
-    h2{
-        color: $secondColor;
+    h2 {
+        color: map-get($theme-colors, "secondColor");
         @extend %style-for-h2;
     }
-    p{
-        color: $secondColor;
+    p {
+        color: map-get($theme-colors, "secondColor");
         font-weight: 400;
         line-height: 24px;
         font-size: 16px;
     }
-    button{
+    button {
         font-weight: 700;
         font-size: 16px;
         line-height: 20px;
         padding: 12px 24px;
         border-radius: 5px;
-        border: solid 1px $secondColor;
-        color: $secondColor;
+        border: solid 1px map-get($theme-colors, "secondColor");
+        color: map-get($theme-colors, "secondColor");
         background-color: transparent;
     }
-    button:hover{
-        border: solid 1px $secondColor;
-        color: $mainColor;
-        background-color: $secondColor;
+    button:hover {
+        border: solid 1px map-get($theme-colors, "secondColor");
+        color: map-get($theme-colors, mainColor);
+        background-color: map-get($theme-colors, "secondColor");
     }
 }
-.customer-container{
-    background-color: $background-color-grey;
+.customer-container {
+    background-color: map-get($theme-colors, "background-color-grey");
     padding: 10%;
     position: relative;
 }
-#carouselExampleIndicators{
+#carouselExampleIndicators {
     position: relative;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
-.carousel-item{
+.carousel-item {
     padding: 70px 50px;
-    background-color: $secondColor;
+    background-color: map-get($theme-colors, "secondColor");
     border-radius: 5px;
     position: relative;
     height: 20em;
 }
-.carousel-indicators{
-    position: absolute ; 
-    bottom: -20%!important;
-    button{
-        background-color: $mainColor !important;
+.carousel-indicators {
+    position: absolute;
+    bottom: -20% !important;
+    button {
+        background-color: map-get($theme-colors, "mainColor") !important;
         border-radius: 5px !important;
         height: 4px !important;
-        border: solid 1px $mainColor !important;
+        border: solid 1px map-get($theme-colors, "mainColor") !important;
         width: 14px !important;
-        transition: all .4s ease !important;
+        transition: all 0.4s ease !important;
     }
-    button.active{
+    button.active {
         width: 30px !important;
     }
 }
-.ballPict{
+.ballPict {
     position: absolute;
-    top: 0; 
+    top: 0;
     left: 40px;
 }
-.ballArrowPict{
-    position: absolute; 
-    bottom: -20px; 
+.ballArrowPict {
+    position: absolute;
+    bottom: -20px;
     right: -20px;
 }
-.hooks{
-    color: #f5f5f5 !important;
+.hooks {
+    color: map-get($theme-colors, "hooks-color") !important;
     font-size: 70px !important;
-    position: absolute; 
-    top: 100px; 
+    position: absolute;
+    top: 100px;
     right: 100px;
 }
-.text{
+.text {
     font-weight: 500;
     line-height: 28px;
-    color: $textColor;
+    color: map-get($theme-colors, "textColor");
     margin-top: 2%;
     font-size: 16px;
     width: 95%;
     z-index: 3;
     position: relative;
 }
-.textContent{
+.textContent {
     @extend %display-row;
     margin-top: 5%;
-    img{
+    img {
         height: 70px;
         width: 70px;
         border-radius: 50%;
     }
-    h4{
+    h4 {
         font-size: 18px;
         color: black;
         font-weight: 600;
@@ -229,8 +233,8 @@
         padding-left: 20px;
     }
 }
-.deg{
-    color: $textColor;
+.deg {
+    color: map-get($theme-colors, "textColor");
     display: block;
     font-size: 15px;
     font-weight: 400;

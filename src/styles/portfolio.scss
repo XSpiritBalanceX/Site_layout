@@ -1,64 +1,64 @@
-@import 'variables';
+@import "variables";
 
-.fifth-content{
-    background-color: $secondColor;
+.fifth-content {
+    background-color: map-get($theme-colors, "secondColor");
     padding: 10% 3% 10% 3%;
 }
-.navWithWorks{
+.navWithWorks {
     @extend %display-center;
     margin-top: 5%;
-    button{
+    button {
         border: none;
-        color: $textColor !important;
+        color: map-get($theme-colors, "textColor") !important;
         font-size: 17px;
         font-weight: 700;
     }
 }
-.buttonInWork{
+.buttonInWork {
     border-bottom: none !important;
     display: flex;
-    justify-content: space-around;    
+    justify-content: space-around;
     width: 60%;
-    button{
+    button {
         border: none !important;
         position: relative;
         font-weight: 700 !important;
         font-size: 16px !important;
         line-height: 48px !important;
     }
-    button:hover{
-        color: $mainColor !important;
+    button:hover {
+        color: map-get($theme-colors, "mainColor") !important;
     }
-    button.active{
-        color: $mainColor !important;
+    button.active {
+        color: map-get($theme-colors, "mainColor") !important;
         background-color: transparent !important;
         border: none !important;
         position: relative;
         opacity: 1;
     }
-    button.active::before{
-        position: absolute; 
-        bottom: 0; 
+    button.active::before {
+        position: absolute;
+        bottom: 0;
         left: 0;
         content: "";
         height: 4px;
         width: 100%;
-        background-color: $mainColor;
+        background-color: map-get($theme-colors, "mainColor");
         border-radius: 4px;
         opacity: 1;
     }
-    button::before{
-        position: absolute; 
-        bottom: 0; 
+    button::before {
+        position: absolute;
+        bottom: 0;
         left: 0;
         content: "";
         height: 4px;
         width: 100%;
-        background-color: $mainColor;
-        border-radius: 4px ;
+        background-color: map-get($theme-colors, "mainColor");
+        border-radius: 4px;
         opacity: 0;
     }
-    button:hover::before{
+    button:hover::before {
         opacity: 1;
     }
 }
@@ -68,35 +68,35 @@
     justify-content: flex-start;
     padding: 5%;
 }
-.itemInWorks{
-  width: 33%;
-  position: relative;
-  margin-bottom: 2%;
-  img{
+.itemInWorks {
+    width: 33%;
+    position: relative;
+    margin-bottom: 2%;
+    img {
         border-radius: 10px;
         height: 76%;
         width: 95%;
         max-width: 100%;
     }
-    h4{
+    h4 {
         font-size: 24px;
         line-height: 30px;
         font-weight: 600;
         line-height: 1.5;
         margin-top: 15px;
     }
-    p{
+    p {
         color: black;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         width: 97%;
     }
-    &:hover .works-content{
+    &:hover .works-content {
         opacity: 1;
     }
 }
-.works-content{
+.works-content {
     position: absolute;
     top: 2%;
     left: 2%;
@@ -105,25 +105,25 @@
     @extend %display-row;
     justify-content: center;
     align-items: center;
-    border: solid 1px  $secondColor;
+    border: solid 1px map-get($theme-colors, "secondColor");
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.8);
     opacity: 0;
-    transition: all .3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
 }
-.iconInItem{
-    border: $mainColor solid 1px;
-    background-color: $mainColor;
-    color: $secondColor;
+.iconInItem {
+    border: map-get($theme-colors, "mainColor") solid 1px;
+    background-color: map-get($theme-colors, "mainColor");
+    color: map-get($theme-colors, "secondColor");
     padding: 15px;
     border-radius: 10px;
     @extend %display-center;
     margin-right: 10px;
     font-size: 1.5em;
-    transition: all .4s ease-out 0s;
-    &:hover{
-        background-color: $border-color-blue;
-        border: $border-color-blue solid 1px;
+    transition: all 0.4s ease-out 0s;
+    &:hover {
+        background-color: map-get($theme-colors, "border-color-blue");
+        border: map-get($theme-colors, "border-color-blue") solid 1px;
         cursor: pointer;
     }
 }

@@ -1,42 +1,60 @@
-$mainColor: #155bd5;
-$secondColor: white;
-$textColor:#6d6d6d;
-$border-color:#e0e0e0;
-$border-color-blue:#1c3ab6;
-$border-color-grey:#efefef;
-$background-color-grey:#fafafa;
-$shadow-for-box:0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
+$theme-colors: (
+    "mainColor": #155bd5,
+    "secondColor": white,
+    "textColor": #6d6d6d,
+    "border-color": #e0e0e0,
+    "border-color-blue": #1c3ab6,
+    "border-color-grey": #efefef,
+    "background-color-grey": #fafafa,
+    "border-color-togle": #e4e2e2a5,
+    "border-navbar": #e0e0e092,
+    "hooks-color": #f5f5f5,
+    "color-in-blog-border": #eee,
+    "socialN-border": #666,
+    "shadow-for-box": (
+        0px 2px 4px rgba(40, 41, 61, 0.04),
+        0px 8px 16px rgba(96, 97, 112, 0.16),
+    ),
+    "shadow-for-team": (
+        0px 0px 1px rgba(40, 41, 61, 0.04),
+        0px 2px 4px rgba(96, 97, 112, 0.16),
+    ),
+    "shadow-for-services-hover": 0 0 20px rgba(0, 0, 0, 0.1),
+    "shadow-for-blog-hover": 0 10px 30px rgba(0, 0, 0, 0.041),
+);
 
-%style-for-p{
+$image-in-team-section: url(../../public/images/overlay.png);
+
+%style-for-p {
     line-height: 24px;
     font-size: 16px;
-    color: $textColor;
+    color: map-get($theme-colors, "textColor");
     font-weight: 400;
 }
 
-%style-for-h2{
+%style-for-h2 {
     font-weight: 700;
     font-size: 36px;
     line-height: 45px;
 }
 
-%display-space-between{
+%display-space-between {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-%display-row{
+%display-row {
     display: flex;
     flex-direction: row;
 }
 
-%display-column{
+%display-column {
     display: flex;
     flex-direction: column;
 }
 
-%display-center{
+%display-center {
     display: flex;
     justify-content: center;
     align-items: center;
