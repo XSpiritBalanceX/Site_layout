@@ -20,24 +20,24 @@
         }
     }
     .buttonInWork {
-        width: 80% !important;
+        width: 80%;
         button {
-            visibility: visible !important;
+            visibility: visible;
         }
     }
     .fifth-content,
     .contentInFooter {
-        padding-left: 0% !important;
-        padding-right: 0% !important;
+        padding-left: 0%;
+        padding-right: 0%;
     }
     .seventh-content,
     .blog-container,
     .contact-content {
-        padding-left: 3% !important;
-        padding-right: 3% !important;
+        padding-left: 3%;
+        padding-right: 3%;
     }
     .itemInWorks {
-        margin-bottom: 5% !important;
+        margin-bottom: 5%;
         img {
             height: 67%;
         }
@@ -52,7 +52,7 @@
     }
     .eighth-content {
         > div {
-            width: 70% !important;
+            width: 70%;
         }
     }
     .picture,
@@ -69,9 +69,9 @@
         width: 100%;
     }
     .iteminContact {
-        margin-bottom: 3% !important;
+        margin-bottom: 3%;
         margin-right: 2%;
-        width: 47% !important;
+        width: 47%;
     }
     .formInTouch {
         width: 100%;
@@ -86,17 +86,17 @@
 
 @media all and (max-width: 60em) {
     #menuRight {
-        display: none !important;
+        display: none;
     }
     #menuMain {
-        display: block !important;
+        display: block;
     }
     .togle-menu,
     .nav {
-        visibility: hidden !important;
+        visibility: hidden;
     }
     #logoComp {
-        opacity: 1 !important;
+        opacity: 1;
     }
     .navbar-toggler,
     #logoComp {
@@ -149,7 +149,7 @@
         justify-content: center;
     }
     .itemInCard {
-        width: 43% !important;
+        width: 43%;
     }
     .buttonInWork {
         button {
@@ -163,8 +163,8 @@
     .seventh-content,
     .blog-container,
     .contentInFooter {
-        padding-left: 10% !important;
-        padding-right: 10% !important;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     .contForWors {
         justify-content: space-between;
@@ -172,9 +172,9 @@
         padding-left: 10%;
     }
     .itemInWorks {
-        width: 50% !important;
+        width: 50%;
         position: relative;
-        margin-bottom: 5% !important;
+        margin-bottom: 5%;
     }
     .itemInWorks {
         img {
@@ -182,7 +182,7 @@
         }
     }
     .works-content {
-        height: 66% !important;
+        height: 66%;
     }
     .contanForPlan,
     .contentInSeven,
@@ -195,7 +195,7 @@
     .itemInSeven,
     .itemInBlog,
     .itemInFooter {
-        width: 45% !important;
+        width: 45%;
         margin-bottom: 5%;
         margin-right: 5%;
     }
@@ -236,7 +236,7 @@
         margin-top: 5%;
     }
     .infoMain {
-        width: 80% !important;
+        width: 80%;
     }
     .person-main {
         img {
@@ -266,27 +266,27 @@
         width: 30em;
     }
     .button-text {
-        flex-direction: column !important;
+        flex-direction: column;
         justify-content: center;
     }
     .video-content {
         i {
-            font-size: 1.3em !important;
-            line-height: 1.8 !important;
+            font-size: 1.3em;
+            line-height: 1.8;
         }
         a {
             position: absolute;
-            top: 36% !important;
-            left: 43% !important;
-            width: 2.4em !important;
-            height: 2.4em !important;
+            top: 36%;
+            left: 43%;
+            width: 2.4em;
+            height: 2.4em;
         }
     }
     .third-content,
     .seventh-content,
     .contact-content {
-        padding-left: 13% !important;
-        padding-right: 13% !important;
+        padding-left: 13%;
+        padding-right: 13%;
     }
     .contentInService,
     .contanForPlan {
@@ -295,39 +295,36 @@
     }
     .itemInCard,
     .itemInPlan {
-        width: 100% !important;
+        width: 100%;
     }
     .itemInPlan {
         padding-top: 10%;
         padding-bottom: 10%;
     }
     .itemInWorks {
-        width: 48% !important;
+        width: 48%;
     }
     .buttonInWork {
-        width: 60% !important;
+        width: 60%;
     }
     .itemInWorks {
         img {
-            height: 14em !important;
+            height: 14em;
         }
     }
     .works-content {
-        height: 61% !important;
-    }
-    .ulPric {
-        margin-left: -50%;
+        height: 61%;
     }
     .itemInSeven {
-        width: 45% !important;
-        height: 16em !important;
+        width: 45%;
+        height: 16em;
         img {
-            height: 13em !important;
+            height: 13em;
         }
     }
     .eighth-content {
         > div {
-            width: 99% !important;
+            width: 99%;
         }
     }
     .containerForBlog {
@@ -335,21 +332,21 @@
         align-items: center;
     }
     .itemInBlog {
-        width: 85% !important;
+        width: 85%;
         margin-bottom: 5%;
         margin-right: 0%;
     }
     .picture,
     .contentPicture {
-        width: 100% !important;
+        width: 100%;
         height: 20em;
     }
     .customer-container {
-        padding-left: 5% !important;
-        padding-right: 5% !important;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     #carouselExampleIndicators {
-        width: 100% !important;
+        width: 100%;
     }
     .containerWitContact {
         flex-direction: column;
@@ -357,10 +354,10 @@
     }
     .iteminContact,
     .formInTouch {
-        width: 100% !important;
+        width: 100%;
     }
     .row {
-        flex-direction: column !important;
+        flex-direction: column;
     }
     .row input {
         width: 100%;
@@ -369,11 +366,11 @@
     .contentInFooter {
         flex-direction: column;
         align-items: center;
-        padding-left: 5% !important;
-        padding-right: 5% !important;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     .itemInFooter {
-        width: 100% !important;
+        width: 100%;
         text-align: center;
     }
     .logoPicture {
@@ -391,37 +388,37 @@
     .fourth-content,
     .sixth-content,
     .seventh-content {
-        padding-left: 5% !important;
-        padding-right: 5% !important;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     .text-container-second {
         margin-left: -10%;
     }
     .contForWors,
     .contentInSeven {
-        flex-direction: column !important;
+        flex-direction: column;
         padding: 0;
     }
     .itemInWorks,
     .itemInSeven {
-        width: 100% !important;
+        width: 100%;
     }
     .itemInSeven {
-        height: 30em !important;
+        height: 30em;
         margin: 0 0 5% 0;
         img {
-            height: 27em !important;
+            height: 27em;
         }
     }
     .works-content {
         top: 2%;
         left: 2%;
-        width: 91% !important;
-        height: 75% !important;
+        width: 91%;
+        height: 75%;
     }
     .itemInWorks {
         img {
-            height: 23em !important;
+            height: 23em;
         }
     }
     .buttonInWork {
@@ -431,8 +428,8 @@
     .blog-container,
     .contenWitClient,
     .contentInFooter {
-        padding-left: 1% !important;
-        padding-right: 1% !important;
+        padding-left: 1%;
+        padding-right: 1%;
     }
     .eighth-content {
         > div {

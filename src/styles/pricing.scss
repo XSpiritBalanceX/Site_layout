@@ -24,15 +24,13 @@
         padding: 8px 20px;
     }
     p {
-        width: 90% !important;
-        font-weight: 400 !important;
-        font-size: 16px !important;
-        line-height: 24px !important;
+        width: 90%;
+        @extend %style-for-p;
     }
     h2 {
-        font-weight: 600 !important;
-        font-size: 55px !important;
-        line-height: 68.75px !important;
+        font-weight: 600;
+        font-size: 55px;
+        line-height: 68.75px;
         position: relative;
     }
     button {

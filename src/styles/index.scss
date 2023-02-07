@@ -190,7 +190,7 @@ body {
     }
 }
 #logoWhite {
-    opacity: 1 !important;
+    opacity: 1;
 }
 .nav-link {
     color: map-get($theme-colors, "secondColor") !important;
@@ -206,7 +206,7 @@ body {
     position: absolute;
     right: 4%;
     top: 20px;
-    color: map-get($theme-colors, "secondColor") !important;
+    color: map-get($theme-colors, "secondColor");
     height: 50px;
     width: 50px;
     i {
@@ -216,7 +216,7 @@ body {
         border-radius: 50%;
     }
     &:hover i {
-        color: map-get($theme-colors, "mainColor") !important;
+        color: map-get($theme-colors, "mainColor");
         border: solid 1px map-get($theme-colors, "secondColor");
         background-color: map-get($theme-colors, "secondColor");
     }
@@ -291,7 +291,7 @@ body {
     .toggler-icon {
         width: 30px;
         height: 2px;
-        background-color: white !important;
+        background-color: map-get($theme-colors, "secondColor");
         margin: 5px 0;
         display: block;
         position: relative;
@@ -316,13 +316,13 @@ body {
 .navbar-toggler.collapsed {
     border: solid 1px transparent;
     .toggler-icon {
-        transform: none !important;
+        transform: none;
     }
     .toggler-icon:nth-of-type(1) {
         top: 0px;
     }
     .toggler-icon:nth-of-type(2) {
-        display: block !important;
+        display: block;
     }
 }
 #menuRight {
@@ -332,7 +332,7 @@ body {
     display: none;
 }
 .navbar-collapse {
-    padding-left: 3% !important;
+    padding-left: 3%;
     margin-left: 7%;
     width: 85%;
     background-color: map-get($theme-colors, "mainColor");
@@ -342,9 +342,9 @@ body {
 }
 .navbar-nav {
     a {
-        color: map-get($theme-colors, "secondColor") !important;
+        color: map-get($theme-colors, "secondColor");
         text-decoration: none;
-        font-size: 15px !important;
+        font-size: 15px;
     }
     li {
         margin-bottom: 2%;
