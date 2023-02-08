@@ -1,13 +1,13 @@
 @import "variables";
 
 .blog-container {
-    background-color: map-get($theme-colors, "secondColor");
+    background-color: map-get($theme-colors, "second");
     padding: 10%;
 }
-.containerForBlog {
+.container-for-blog {
     @extend %display-space-between;
 }
-.itemInBlog {
+.item-in-blog {
     width: 32%;
     h4 {
         font-weight: 600;
@@ -16,10 +16,10 @@
     }
     h4:hover {
         cursor: pointer;
-        color: map-get($theme-colors, "mainColor");
+        color: map-get($theme-colors, "main");
     }
     p {
-        color: map-get($theme-colors, "textColor");
+        color: map-get($theme-colors, "text");
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
@@ -31,12 +31,12 @@
     border-radius: 5px;
     transition: all 0.5s ease-out;
 }
-.itemInBlog:hover .picture {
+.item-in-blog:hover .picture {
     overflow: hidden;
     transform: skew(-2deg, 2deg) scale(1.1);
     cursor: pointer;
 }
-.contentPicture {
+.content-picture {
     position: relative;
     border-radius: 5px;
     overflow: hidden;
@@ -49,8 +49,8 @@
     bottom: 20px;
     right: 15px;
     display: inline-block;
-    border: map-get($theme-colors, "mainColor") solid 1px;
-    background-color: map-get($theme-colors, "mainColor");
+    border: map-get($theme-colors, "main") solid 1px;
+    background-color: map-get($theme-colors, "main");
     border-radius: 30px;
     padding: 6px 15px 6px 7px;
     img {
@@ -59,36 +59,36 @@
         border-radius: 50%;
     }
     span {
-        color: map-get($theme-colors, "secondColor");
+        color: map-get($theme-colors, "second");
         margin-left: 10px;
         font-size: 10px;
         font-weight: 500;
     }
 }
-.contenWitClient {
-    background-color: map-get($theme-colors, "background-color-grey");
+.conten-wit-client {
+    background-color: map-get($theme-colors, "background-grey");
     padding: 10%;
 }
-.contentInClients {
+.content-in-clients {
     text-align: center;
     display: inline-block;
     margin: 0 15% 0 15%;
 }
-.itemInClients {
+.item-in-clients {
     display: inline-block;
     margin: 13px 10px;
-    background-color: map-get($theme-colors, "secondColor");
+    background-color: map-get($theme-colors, "second");
     line-height: 100px;
     padding: 8px 25px;
     border-radius: 10px;
-    border: solid 1px map-get($theme-colors, "color-in-blog-border");
+    border: solid 1px map-deep-get($theme-colors, "border", "blog");
     transition: all 0.4s ease-out 0s;
     img {
         max-width: 170px;
     }
 }
-.itemInClients:hover {
-    box-shadow: map-get($theme-colors, "shadow-for-blog-hover");
+.item-in-clients:hover {
+    box-shadow: map-deep-get($theme-colors, "shadow-for", "blog-hover");
     transform: translateY(-5px);
     cursor: pointer;
 }

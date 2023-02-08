@@ -1,19 +1,19 @@
 @import "variables";
 
 .seventh-content {
-    background-color: map-get($theme-colors, "secondColor");
+    background-color: map-get($theme-colors, "second");
     padding: 10%;
 }
-.contentInSeven {
+.content-in-seven {
     @extend %display-space-between;
 }
-.itemInSeven {
+.item-in-seven {
     width: 32%;
     height: 100%;
-    border: solid 1px map-get($theme-colors, "border-color-grey");
+    border: solid 1px map-deep-get($theme-colors, "border", "grey");
     border-radius: 10px;
     position: relative;
-    box-shadow: map-get($theme-colors, "shadow-for-team");
+    box-shadow: map-deep-get($theme-colors, "shadow-for", "team");
     img {
         width: 100%;
         height: 26em;
@@ -37,14 +37,14 @@
         font-weight: 400;
         line-height: 24px;
         margin-top: 10px;
-        color: map-get($theme-colors, "mainColor");
+        color: map-get($theme-colors, "main");
     }
     &:hover h4 {
-        color: map-get($theme-colors, "secondColor");
+        color: map-get($theme-colors, "second");
         z-index: 5;
     }
     &:hover p {
-        color: map-get($theme-colors, "secondColor");
+        color: map-get($theme-colors, "second");
         z-index: 5;
     }
 }
@@ -53,7 +53,7 @@
     bottom: 0;
     left: 0;
     border-radius: 0 0 10px 10px;
-    background-color: map-get($theme-colors, "secondColor");
+    background-color: map-get($theme-colors, "second");
     padding: 20px 0 20px 0;
     width: 100%;
     z-index: 5;
@@ -62,7 +62,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        background-color: map-get($theme-colors, "mainColor");
+        background-color: map-get($theme-colors, "main");
         content: "";
         width: 100%;
         height: 100%;
@@ -71,11 +71,11 @@
         opacity: 0;
     }
 }
-.ulInTeam {
+.ul-in-team {
     list-style: none;
     padding: 10px 20px 6px;
     border-radius: 50px;
-    background-color: map-get($theme-colors, "secondColor");
+    background-color: map-get($theme-colors, "second");
     position: absolute;
     top: -20px;
     right: 26%;
@@ -83,14 +83,14 @@
     @extend %display-row;
     justify-content: space-around;
     align-items: center;
-    color: map-get($theme-colors, "textColor");
+    color: map-get($theme-colors, "text");
     li:hover {
-        color: map-get($theme-colors, "mainColor");
+        color: map-get($theme-colors, "main");
         cursor: pointer;
     }
 }
 .team-social {
-    background-color: map-get($theme-colors, "mainColor");
+    background-color: map-get($theme-colors, "main");
     position: absolute;
     bottom: 0;
     left: 0;
@@ -103,11 +103,7 @@
 }
 .eighth-content {
     padding: 5% 10% 5% 10%;
-    background: linear-gradient(
-        45deg,
-        map-get($theme-colors, "mainColor"),
-        map-get($theme-colors, "border-color-blue")
-    );
+    background: linear-gradient(45deg, map-get($theme-colors, "main"), map-deep-get($theme-colors, "border", "blue"));
     position: relative;
     z-index: 2;
     @extend %display-column;
@@ -131,11 +127,11 @@
         text-align: center;
     }
     h2 {
-        color: map-get($theme-colors, "secondColor");
+        color: map-get($theme-colors, "second");
         @extend %style-for-h2;
     }
     p {
-        color: map-get($theme-colors, "secondColor");
+        color: map-get($theme-colors, "second");
         font-weight: 400;
         line-height: 24px;
         font-size: 16px;
@@ -146,22 +142,22 @@
         line-height: 20px;
         padding: 12px 24px;
         border-radius: 5px;
-        border: solid 1px map-get($theme-colors, "secondColor");
-        color: map-get($theme-colors, "secondColor");
+        border: solid 1px map-get($theme-colors, "second");
+        color: map-get($theme-colors, "second");
         background-color: transparent;
     }
     button:hover {
-        border: solid 1px map-get($theme-colors, "secondColor");
-        color: map-get($theme-colors, mainColor);
-        background-color: map-get($theme-colors, "secondColor");
+        border: solid 1px map-get($theme-colors, "second");
+        color: map-get($theme-colors, "main");
+        background-color: map-get($theme-colors, "second");
     }
 }
 .customer-container {
-    background-color: map-get($theme-colors, "background-color-grey");
+    background-color: map-get($theme-colors, "background-grey");
     padding: 10%;
     position: relative;
 }
-#carouselExampleIndicators {
+#carousel-example-indicators {
     position: relative;
     width: 80%;
     margin-left: auto;
@@ -169,7 +165,7 @@
 }
 .carousel-item {
     padding: 70px 50px;
-    background-color: map-get($theme-colors, "secondColor");
+    background-color: map-get($theme-colors, "second");
     border-radius: 5px;
     position: relative;
     height: 20em;
@@ -178,10 +174,10 @@
     position: absolute;
     bottom: -20% !important;
     button {
-        background-color: map-get($theme-colors, "mainColor") !important;
+        background-color: map-get($theme-colors, "main") !important;
         border-radius: 5px !important;
         height: 4px !important;
-        border: solid 1px map-get($theme-colors, "mainColor") !important;
+        border: solid 1px map-get($theme-colors, "main") !important;
         width: 14px !important;
         transition: all 0.4s ease !important;
     }
@@ -189,18 +185,18 @@
         width: 30px !important;
     }
 }
-.ballPict {
+.ball-pict {
     position: absolute;
     top: 0;
     left: 40px;
 }
-.ballArrowPict {
+.ball-arrow-pict {
     position: absolute;
     bottom: -20px;
     right: -20px;
 }
 .hooks {
-    color: map-get($theme-colors, "hooks-color") !important;
+    color: map-get($theme-colors, "hooks") !important;
     font-size: 70px !important;
     position: absolute;
     top: 100px;
@@ -209,14 +205,14 @@
 .text {
     font-weight: 500;
     line-height: 28px;
-    color: map-get($theme-colors, "textColor");
+    color: map-get($theme-colors, "text");
     margin-top: 2%;
     font-size: 16px;
     width: 95%;
     z-index: 3;
     position: relative;
 }
-.textContent {
+.text-content {
     @extend %display-row;
     margin-top: 5%;
     img {
@@ -234,7 +230,7 @@
     }
 }
 .deg {
-    color: map-get($theme-colors, "textColor");
+    color: map-get($theme-colors, "text");
     display: block;
     font-size: 15px;
     font-weight: 400;

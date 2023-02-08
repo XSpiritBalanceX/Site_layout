@@ -1,20 +1,20 @@
 @import "variables";
 
 .fifth-content {
-    background-color: map-get($theme-colors, "secondColor");
+    background-color: map-get($theme-colors, "second");
     padding: 10% 3% 10% 3%;
 }
-.navWithWorks {
+.nav-with-works {
     @extend %display-center;
     margin-top: 5%;
     button {
         border: none;
-        color: map-get($theme-colors, "textColor") !important;
+        color: map-get($theme-colors, "text") !important;
         font-size: 17px;
         font-weight: 700;
     }
 }
-.buttonInWork {
+.button-in-work {
     border-bottom: none !important;
     display: flex;
     justify-content: space-around;
@@ -27,10 +27,10 @@
         line-height: 48px !important;
     }
     button:hover {
-        color: map-get($theme-colors, "mainColor") !important;
+        color: map-get($theme-colors, "main") !important;
     }
     button.active {
-        color: map-get($theme-colors, "mainColor") !important;
+        color: map-get($theme-colors, "main") !important;
         background-color: transparent !important;
         border: none !important;
         position: relative;
@@ -43,7 +43,7 @@
         content: "";
         height: 4px;
         width: 100%;
-        background-color: map-get($theme-colors, "mainColor");
+        background-color: map-get($theme-colors, "main");
         border-radius: 4px;
         opacity: 1;
     }
@@ -54,7 +54,7 @@
         content: "";
         height: 4px;
         width: 100%;
-        background-color: map-get($theme-colors, "mainColor");
+        background-color: map-get($theme-colors, "main");
         border-radius: 4px;
         opacity: 0;
     }
@@ -62,13 +62,13 @@
         opacity: 1;
     }
 }
-.contForWors {
+.cont-for-wors {
     @extend %display-row;
     flex-wrap: wrap;
     justify-content: flex-start;
     padding: 5%;
 }
-.itemInWorks {
+.item-in-works {
     width: 33%;
     position: relative;
     margin-bottom: 2%;
@@ -105,16 +105,16 @@
     @extend %display-row;
     justify-content: center;
     align-items: center;
-    border: solid 1px map-get($theme-colors, "secondColor");
+    border: solid 1px map-get($theme-colors, "second");
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.8);
     opacity: 0;
     transition: all 0.3s ease-out 0s;
 }
-.iconInItem {
-    border: map-get($theme-colors, "mainColor") solid 1px;
-    background-color: map-get($theme-colors, "mainColor");
-    color: map-get($theme-colors, "secondColor");
+.icon-in-item {
+    border: map-get($theme-colors, "main") solid 1px;
+    background-color: map-get($theme-colors, "main");
+    color: map-get($theme-colors, "second");
     padding: 15px;
     border-radius: 10px;
     @extend %display-center;
@@ -122,8 +122,8 @@
     font-size: 1.5em;
     transition: all 0.4s ease-out 0s;
     &:hover {
-        background-color: map-get($theme-colors, "border-color-blue");
-        border: map-get($theme-colors, "border-color-blue") solid 1px;
+        background-color: map-deep-get($theme-colors, "border", "blue");
+        border: map-deep-get($theme-colors, "border", "blue") solid 1px;
         cursor: pointer;
     }
 }

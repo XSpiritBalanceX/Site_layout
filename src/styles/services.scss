@@ -3,14 +3,14 @@
 .third-content {
     padding: 10% 5% 10% 5%;
 }
-.mainInService {
+.main-in-service {
     @extend %display-column;
     align-items: center;
     text-align: center;
     div {
-        color: map-get($theme-colors, "mainColor");
+        color: map-get($theme-colors, "main");
         font-weight: 600;
-        border: solid 2px map-get($theme-colors, "mainColor");
+        border: solid 2px map-get($theme-colors, "main");
         padding: 3px 30px 3px 30px;
         border-radius: 30px;
         margin-bottom: 15px;
@@ -24,12 +24,13 @@
         @extend %style-for-p;
     }
 }
-.contentInService {
+.content-in-service {
     @extend %display-row;
     flex-wrap: wrap;
 }
-.itemInCard {
-    border: solid 1px map-get($theme-colors, "border-color-grey");
+
+.item-in-card {
+    border: solid 1px map-deep-get($theme-colors, "border", "grey");
     border-radius: 10px;
     width: 31%;
     padding: 40px 30px;
@@ -46,26 +47,26 @@
         margin-bottom: 10px;
     }
     &:hover {
-        box-shadow: map-get($theme-colors, "shadow-for-services-hover");
+        box-shadow: map-deep-get($theme-colors, "shadow-for", "services-hover");
     }
-    &:hover .serviIcon {
-        background-color: map-get($theme-colors, "mainColor");
-        color: map-get($theme-colors, "secondColor");
+    &:hover .servi-icon {
+        background-color: map-get($theme-colors, "main");
+        color: map-get($theme-colors, "second");
     }
 }
-.serviIcon {
+.servi-icon {
     width: 80px;
     height: 80px;
-    border: map-get($theme-colors, "mainColor") solid 2px;
+    border: map-get($theme-colors, "main") solid 2px;
     border-radius: 50%;
     margin-bottom: 25px;
     @extend %display-center;
     font-size: 40px;
-    color: map-get($theme-colors, "mainColor");
+    color: map-get($theme-colors, "main");
     transition: all 0.3s ease-out 0s;
 }
 .fourth-content {
-    background-color: map-get($theme-colors, "background-color-grey");
+    background-color: map-deep-get($theme-colors, "background-grey");
     padding: 10%;
 }
 .video-content {
@@ -84,20 +85,20 @@
         position: absolute;
         top: 40%;
         left: 46.5%;
-        background-color: map-get($theme-colors, "mainColor");
-        color: map-get($theme-colors, "secondColor");
+        background-color: map-get($theme-colors, "main");
+        color: map-get($theme-colors, "second");
         width: 3em;
         height: 3em;
         border-radius: 50%;
         line-height: 1.55;
-        border: solid 1px map-get($theme-colors, "mainColor");
+        border: solid 1px map-get($theme-colors, "main");
         font-size: 30px;
         transition: all 0.4s ease;
     }
     a:hover {
         cursor: pointer;
-        background-color: map-get($theme-colors, "secondColor");
-        border-color: map-get($theme-colors, "secondColor");
-        color: map-get($theme-colors, "mainColor");
+        background-color: map-get($theme-colors, "second");
+        border-color: map-get($theme-colors, "second");
+        color: map-get($theme-colors, "main");
     }
 }

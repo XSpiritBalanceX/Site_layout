@@ -8,12 +8,12 @@ body {
     @extend %display-row;
     align-items: center;
     padding: 10% 6% 7% 6%;
-    color: map-get($theme-colors, "secondColor");
+    color: map-get($theme-colors, "second");
     margin-top: 0;
-    background-color: map-get($theme-colors, "mainColor");
+    background-color: map-get($theme-colors, "main");
     z-index: 9;
 }
-.infoMain {
+.info-main {
     width: 47%;
     h1 {
         font-weight: 700;
@@ -42,9 +42,9 @@ body {
     }
     button {
         height: 3em;
-        background-color: map-get($theme-colors, "secondColor");
-        color: map-get($theme-colors, "mainColor");
-        border: solid 1px map-get($theme-colors, "secondColor");
+        background-color: map-get($theme-colors, "second");
+        color: map-get($theme-colors, "main");
+        border: solid 1px map-get($theme-colors, "second");
         cursor: pointer;
         margin-right: 10px;
     }
@@ -53,7 +53,7 @@ body {
         padding: 0px 10px 5px 10px;
     }
 }
-.getStarted {
+.get-started {
     font-weight: 700;
     text-align: center;
     border-radius: 5px;
@@ -62,10 +62,10 @@ body {
     line-height: 20px;
     letter-spacing: 1.28px;
     margin-right: 10px;
-}
-.getStarted:hover {
-    background-color: transparent;
-    color: map-get($theme-colors, "secondColor");
+    &:hover {
+        background-color: transparent;
+        color: map-get($theme-colors, "second");
+    }
 }
 .play-button {
     font-size: 25px;
@@ -82,7 +82,7 @@ body {
     @extend %display-space-between;
     padding: 10% 5% 10% 5%;
     align-items: center;
-    background-color: map-get($theme-colors, "background-color-grey");
+    background-color: map-get($theme-colors, "background-grey");
 }
 .image-container {
     position: relative;
@@ -114,7 +114,7 @@ body {
         content: "";
         left: 0;
         top: 50%;
-        background-color: map-get($theme-colors, "mainColor");
+        background-color: map-get($theme-colors, "main");
         height: 2px;
         width: 20px;
         margin-top: -1px;
@@ -123,8 +123,8 @@ body {
         @extend %style-for-h2;
     }
 }
-.navWithText {
-    background-color: map-get($theme-colors, "border-color-grey");
+.nav-with-text {
+    background-color: map-deep-get($theme-colors, "border", "grey");
     padding: 10px;
     border-radius: 5px;
     button {
@@ -134,19 +134,19 @@ body {
         padding: 10px 18px;
         font-size: 16px !important;
         line-height: 24px;
-        background-color: map-get($theme-colors, "background-color-grey") !important;
+        background-color: map-get($theme-colors, "background-grey") !important;
         visibility: visible !important;
     }
     button {
         margin-right: 20px;
     }
     button:hover {
-        color: map-get($theme-colors, "mainColor") !important;
+        color: map-get($theme-colors, "main") !important;
         transition: none !important;
     }
     button.active {
-        background-color: map-get($theme-colors, "mainColor") !important;
-        color: map-get($theme-colors, "secondColor") !important;
+        background-color: map-get($theme-colors, "main") !important;
+        color: map-get($theme-colors, "second") !important;
         opacity: 1;
     }
 }
@@ -157,14 +157,14 @@ body {
 }
 .tab-pane {
     p {
-        color: map-get($theme-colors, "textColor");
+        color: map-get($theme-colors, "text");
         font-size: 16px;
         line-height: 24px;
         font-weight: 400;
     }
 }
 .main {
-    background-color: map-get($theme-colors, "mainColor");
+    background-color: map-get($theme-colors, "main");
     position: fixed;
     top: 0;
     width: 100%;
@@ -172,8 +172,8 @@ body {
     z-index: 10;
     padding: 0 0 0 4%;
 }
-#menuRight {
-    background-color: map-get($theme-colors, "mainColor") !important;
+#menu-right {
+    background-color: map-get($theme-colors, "main") !important;
 }
 .container-fluid {
     display: flex;
@@ -182,18 +182,18 @@ body {
     padding-left: 5% !important;
     padding-top: 13px;
 }
-.navigationMain {
+.navigation-main {
     list-style-type: none;
     font-size: 0;
     li {
         display: inline-block;
     }
 }
-#logoWhite {
+#logo-white {
     opacity: 1;
 }
 .nav-link {
-    color: map-get($theme-colors, "secondColor") !important;
+    color: map-get($theme-colors, "second") !important;
     opacity: 0.7;
     font-size: 17px !important;
     line-height: 24px !important;
@@ -202,23 +202,23 @@ body {
         opacity: 1 !important;
     }
 }
-#navbarTogl {
+#navbar-togle {
     position: absolute;
     right: 4%;
     top: 20px;
-    color: map-get($theme-colors, "secondColor");
+    color: map-get($theme-colors, "second");
     height: 50px;
     width: 50px;
     i {
         line-height: 1.5;
         font-size: 1.4em;
-        border: solid 1px map-get($theme-colors, "border-navbar");
+        border: solid 1px map-deep-get($theme-colors, "border", "navbar");
         border-radius: 50%;
     }
     &:hover i {
-        color: map-get($theme-colors, "mainColor");
-        border: solid 1px map-get($theme-colors, "secondColor");
-        background-color: map-get($theme-colors, "secondColor");
+        color: map-get($theme-colors, "main");
+        border: solid 1px map-get($theme-colors, "second");
+        background-color: map-get($theme-colors, "second");
     }
     &:focus {
         box-shadow: none !important;
@@ -229,7 +229,7 @@ body {
 }
 .nav-item {
     p {
-        color: map-get($theme-colors, "textColor");
+        color: map-get($theme-colors, "text");
         font-size: 1em;
         font-weight: 16px;
         line-height: 24px;
@@ -244,7 +244,7 @@ body {
     list-style-type: none;
 }
 .nav-link-in-menu {
-    color: map-get($theme-colors, "textColor");
+    color: map-get($theme-colors, "text");
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
@@ -256,25 +256,25 @@ body {
         cursor: pointer;
     }
 }
-.socNet {
+.social-network {
     margin-left: 8%;
     margin-top: 10%;
     i {
         margin: 5% 3% 0 0;
-        border: solid 1px map-get($theme-colors, "color-in-blog-border");
+        border: solid 1px map-deep-get($theme-colors, "border", "blog");
         border-radius: 50%;
         font-size: 18px;
         width: 38px;
         height: 38px;
-        color: map-get($theme-colors, "socialN-border");
+        color: map-deep-get($theme-colors, "border", "social");
         padding: 5px 10px 5px 10px;
         line-height: 1.5;
     }
     i:hover {
         cursor: pointer;
-        background-color: map-get($theme-colors, "mainColor");
-        color: map-get($theme-colors, "secondColor");
-        border: solid 1px map-get($theme-colors, "mainColor");
+        background-color: map-get($theme-colors, "main");
+        color: map-get($theme-colors, "second");
+        border: solid 1px map-get($theme-colors, "main");
     }
 }
 .btn-close {
@@ -291,7 +291,7 @@ body {
     .toggler-icon {
         width: 30px;
         height: 2px;
-        background-color: map-get($theme-colors, "secondColor");
+        background-color: map-get($theme-colors, "second");
         margin: 5px 0;
         display: block;
         position: relative;
@@ -325,24 +325,24 @@ body {
         display: block;
     }
 }
-#menuRight {
+#menu-right {
     display: block;
 }
-#menuMain {
+#menu-main {
     display: none;
 }
 .navbar-collapse {
     padding-left: 3%;
     margin-left: 7%;
     width: 85%;
-    background-color: map-get($theme-colors, "mainColor");
+    background-color: map-get($theme-colors, "main");
     position: fixed;
     top: 5em;
     z-index: 10;
 }
 .navbar-nav {
     a {
-        color: map-get($theme-colors, "secondColor");
+        color: map-get($theme-colors, "second");
         text-decoration: none;
         font-size: 15px;
     }
@@ -351,8 +351,8 @@ body {
     }
 }
 .togle-menu {
-    color: map-get($theme-colors, "secondColor");
-    border: solid 1px map-get($theme-colors, "border-color-togle");
+    color: map-get($theme-colors, "second");
+    border: solid 1px map-deep-get($theme-colors, "border", "togle");
     display: inline-block;
     position: absolute;
     top: 20px;
@@ -361,8 +361,8 @@ body {
     border-radius: 50%;
     padding: 1px 7px 1px 7px;
     &:hover {
-        background-color: map-get($theme-colors, "secondColor");
-        color: map-get($theme-colors, "mainColor");
+        background-color: map-get($theme-colors, "second");
+        color: map-get($theme-colors, "main");
         cursor: pointer;
     }
 }

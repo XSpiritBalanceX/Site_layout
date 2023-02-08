@@ -3,17 +3,17 @@
 .footer {
     padding: 100px 0 100px 0;
 }
-.contentInFooter {
+.content-in-footer {
     margin: 0 7% 0 7%;
     @extend %display-space-between;
     align-items: stretch;
 }
-.logoPicture {
+.logo-picture {
     width: 60%;
     height: 3em;
     margin-top: -10px;
 }
-.itemInFooter {
+.item-in-footer {
     @extend %display-column;
     justify-content: left;
     width: 25%;
@@ -32,26 +32,26 @@
         @extend %style-for-p;
     }
 }
-.minWidt {
+.min-widt {
     width: 15%;
 }
 .email-footer {
     height: 55px;
     border-radius: 10px;
-    border: solid 1px map-get($theme-colors, "border-color");
+    border: solid 1px map-deep-get($theme-colors, "border", "white");
     padding: 0 65px 0 18px;
     width: 100%;
 }
-.contanerForSubsc {
+.contaner-for-subsc {
     position: relative;
     width: 100%;
 }
 .btn-footer {
     height: 40px;
     width: 40px;
-    background-color: map-get($theme-colors, "mainColor");
+    background-color: map-get($theme-colors, "main");
     text-align: center;
-    color: map-get($theme-colors, "secondColor");
+    color: map-get($theme-colors, "second");
     border: transparent;
     border-radius: 5px;
     line-height: 42px;
@@ -60,7 +60,7 @@
     right: 3%;
     transition: all 0.4s ease;
     &:hover {
-        background-color: map-get($theme-colors, "border-color-blue");
+        background-color: map-deep-get($theme-colors, "border", "blue");
     }
 }
 .button-go-to-top {
@@ -70,11 +70,11 @@
     font-size: 20px;
     padding: 7px 13px 7px 13px;
     border-radius: 5px;
-    border: solid 1px map-get($theme-colors, "mainColor");
-    background-color: map-get($theme-colors, "mainColor");
+    border: solid 1px map-get($theme-colors, "main");
+    background-color: map-get($theme-colors, "main");
     z-index: 1;
     a {
-        color: map-get($theme-colors, "secondColor");
+        color: map-get($theme-colors, "second");
     }
     &:hover {
         cursor: pointer;

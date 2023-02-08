@@ -1,33 +1,33 @@
 @import "variables";
 
 .contact-content {
-    background-color: map-get($theme-colors, "secondColor");
+    background-color: map-get($theme-colors, "second");
     padding: 7%;
 }
-.contentInContacts {
+.content-in-contacts {
     @extend %display-space-between;
 }
-.containerWitContact {
+.container-with-contact {
     @extend %display-column;
     width: 30%;
 }
-.iteminContact {
+.item-in-contact {
     @extend %display-row;
-    border: solid 1px map-get($theme-colors, "border-color");
+    border: solid 1px map-deep-get($theme-colors, "border", "white");
     border-radius: 10px;
     margin-bottom: 7%;
     padding: 20px 30px;
     transition: all 0.3s ease-out 0s;
     &:hover {
-        box-shadow: map-get($theme-colors, "shadow-for-box");
+        box-shadow: map-deep-get($theme-colors, "shadow-for", "box");
     }
 }
-.pictureForContact {
+.picture-for-contact {
     font-size: 20px;
     width: 50px;
     height: 50px;
-    background-color: map-get($theme-colors, "mainColor");
-    color: map-get($theme-colors, "secondColor");
+    background-color: map-get($theme-colors, "main");
+    color: map-get($theme-colors, "second");
     border: transparent;
     border-radius: 50%;
     @extend %display-center;
@@ -36,7 +36,7 @@
 .info {
     h4 {
         font-size: 20px;
-        color: map-get($theme-colors, "mainColor");
+        color: map-get($theme-colors, "main");
         margin-bottom: 10px;
         line-height: 25px;
         font-weight: 600;
@@ -46,21 +46,21 @@
         margin: 0;
     }
 }
-.formInTouch {
+.form-in-touch {
     text-align: center;
     width: 67%;
     padding: 50px 40px;
-    border: solid 1px map-get($theme-colors, "border-color");
+    border: solid 1px map-deep-get($theme-colors, "border", "white");
     border-radius: 10px;
-    background-color: map-get($theme-colors, "secondColor");
+    background-color: map-get($theme-colors, "second");
     transition: all 0.3s ease-out 0s;
     z-index: 2;
     &:hover {
-        box-shadow: map-get($theme-colors, "shadow-for-box");
+        box-shadow: map-deep-get($theme-colors, "shadow-for", "box");
     }
     span {
         font-size: 20px;
-        color: map-get($theme-colors, "mainColor");
+        color: map-get($theme-colors, "main");
         font-weight: 700;
         line-height: 30px;
     }
@@ -85,16 +85,16 @@ form {
         width: 48%;
         padding: 15px 25px;
         border-radius: 30px;
-        border: solid 1px map-get($theme-colors, "border-color");
+        border: solid 1px map-deep-get($theme-colors, "border", "white");
     }
     textarea {
         border-radius: 18px;
-        border: solid 1px map-get($theme-colors, "border-color");
+        border: solid 1px map-deep-get($theme-colors, "border", "white");
     }
     .btn-submit {
-        background-color: map-get($theme-colors, "mainColor");
+        background-color: map-get($theme-colors, "main");
         border: transparent;
-        color: map-get($theme-colors, "secondColor");
+        color: map-get($theme-colors, "second");
         border-radius: 48px;
         padding: 12px 24px;
         font-weight: 700;
@@ -104,7 +104,7 @@ form {
     }
     .btn-submit:hover,
     .btn-submit:focus {
-        background-color: map-get($theme-colors, "border-color-blue");
+        background-color: map-deep-get($theme-colors, "border", "blue");
     }
 }
 .map-content {

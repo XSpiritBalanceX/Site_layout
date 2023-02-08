@@ -1,21 +1,21 @@
 @import "variables";
 
 .sixth-content {
-    background-color: map-get($theme-colors, "background-color-grey");
+    background-color: map-get($theme-colors, "background-grey");
     padding: 10% 5%;
 }
-.contanForPlan {
+.contan-for-plan {
     @extend %display-space-between;
 }
-.itemInPlan {
-    border: solid 1px map-get($theme-colors, "border-color-grey");
+.item-in-plan {
+    border: solid 1px map-deep-get($theme-colors, "border", "grey");
     width: 32%;
     padding: 3%;
     border-radius: 10px;
-    background-color: map-get($theme-colors, "secondColor");
+    background-color: map-get($theme-colors, "second");
     transition: all 0.3s ease;
     &:hover {
-        box-shadow: map-get($theme-colors, "shadow-for-box");
+        box-shadow: map-deep-get($theme-colors, "shadow-for", "box");
     }
     .text-center {
         font-weight: 500;
@@ -34,9 +34,9 @@
         position: relative;
     }
     button {
-        border: map-get($theme-colors, "mainColor") solid 1px;
+        border: map-get($theme-colors, "main") solid 1px;
         border-radius: 5px;
-        color: map-get($theme-colors, "mainColor");
+        color: map-get($theme-colors, "main");
         font-size: 16px;
         font-weight: 700;
         line-height: 20px;
@@ -44,42 +44,42 @@
         background-color: transparent;
     }
     button:hover {
-        border: map-get($theme-colors, "border-color-blue") solid 1px;
+        border: map-deep-get($theme-colors, "border", "blue") solid 1px;
         border-radius: 5px;
-        color: map-get($theme-colors, "secondColor");
-        background-color: map-get($theme-colors, "border-color-blue");
+        color: map-get($theme-colors, "second");
+        background-color: map-deep-get($theme-colors, "border", "blue");
     }
 }
 .doll {
     font-weight: 400;
-    color: map-get($theme-colors, "textColor");
+    color: map-get($theme-colors, "text");
     font-size: 20px;
     line-height: 25px;
     position: absolute;
     left: -13px;
     top: 10px;
 }
-.perMon {
+.per-month {
     font-weight: 400;
-    color: map-get($theme-colors, "textColor");
+    color: map-get($theme-colors, "text");
     font-size: 20px;
     line-height: 22.5px;
 }
-.selectedPlan {
-    box-shadow: map-get($theme-colors, "shadow-for-box");
+.selected-plan {
+    box-shadow: map-deep-get($theme-colors, "shadow-for", "box");
     .text-center {
-        color: map-get($theme-colors, "secondColor");
-        background-color: map-get($theme-colors, "mainColor");
+        color: map-get($theme-colors, "second");
+        background-color: map-get($theme-colors, "main");
     }
     button {
-        color: map-get($theme-colors, "secondColor");
-        background-color: map-get($theme-colors, "mainColor");
+        color: map-get($theme-colors, "second");
+        background-color: map-get($theme-colors, "main");
     }
 }
-.ulPric {
+.ul-price {
     list-style: none;
     text-align: start;
-    color: map-get($theme-colors, "textColor");
+    color: map-get($theme-colors, "text");
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -89,6 +89,6 @@
         margin-bottom: 10px;
     }
 }
-.colorInLi {
-    color: map-get($theme-colors, "mainColor");
+.color-in-li {
+    color: map-get($theme-colors, "main");
 }
