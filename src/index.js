@@ -1,9 +1,9 @@
 import './styles/index.scss';
+import './styles/services.scss';
+import './styles/portfolio.scss';
+import './styles/pricing.scss';
+import './styles/team.scss';
 import './styles/blog.scss';
 import './styles/contact.scss';
 import './styles/footer.scss';
 import './styles/media.scss';
-import './styles/portfolio.scss';
-import './styles/pricing.scss';
-import './styles/services.scss';
-import './styles/team.scss';

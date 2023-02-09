@@ -1,92 +1,85 @@
-$mainColor: #155bd5;
-$secondColor: white;
-$text-color:#6d6d6d;
+@import "variables";
 
-%style-for-p{
-    line-height: 24px;
-    font-size: 16px ;
-    color: $text-color;
-    font-weight: 400;
-}
-
-.footer{
+.footer {
     padding: 100px 0 100px 0;
 }
-.contentInFooter{
+.content-in-footer {
     margin: 0 7% 0 7%;
-    display: flex;
-    flex-direction: row;
+    @extend %display-space-between;
     align-items: stretch;
-    justify-content: space-between;
 }
-.logoPicture{
+.logo-picture {
     width: 60%;
     height: 3em;
     margin-top: -10px;
 }
-.itemInFooter{
-    display: flex;
-    flex-direction: column;
+.item-in-footer {
+    @extend %display-column;
     justify-content: left;
     width: 25%;
-    p, span{
+    p,
+    span {
         @extend %style-for-p;
     }
-    h5{
+    h5 {
         font-weight: 700;
         font-size: 20px;
         line-height: 25px;
     }
-    a{
+    a {
         text-decoration: none;
         cursor: pointer;
         @extend %style-for-p;
     }
 }
-.minWidt{
-    width: 15% ;
+.min-widt {
+    width: 15%;
 }
-.email-footer{
+.email-footer {
     height: 55px;
     border-radius: 10px;
-    border: solid 1px #e0e0e0;
+    border: solid 1px map-deep-get($theme-colors, "border", "white");
     padding: 0 65px 0 18px;
     width: 100%;
 }
-.contanerForSubsc{
+.contaner-for-subsc {
     position: relative;
     width: 100%;
 }
-.btn-footer{
+.btn-footer {
     height: 40px;
     width: 40px;
-    background-color: $mainColor;
+    background-color: map-get($theme-colors, "main");
     text-align: center;
-    color: $secondColor;
+    color: map-get($theme-colors, "second");
     border: transparent;
     border-radius: 5px;
     line-height: 42px;
-    position: absolute;top: 15%; right: 3%;
-    transition: all .4s ease;
-    &:hover{
-        background-color: #1c3ab6;
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    transition: all 0.4s ease;
+    &:hover {
+        background-color: map-deep-get($theme-colors, "border", "blue");
     }
 }
-.button-go-to-top{    
-    position: fixed; bottom: 6%;right: 3%;
+.button-go-to-top {
+    position: fixed;
+    bottom: 6%;
+    right: 3%;
     font-size: 20px;
     padding: 7px 13px 7px 13px;
     border-radius: 5px;
-    border: solid 1px $mainColor;
-    background-color: $mainColor;
+    border: solid 1px map-get($theme-colors, "main");
+    background-color: map-get($theme-colors, "main");
     z-index: 1;
-    a{
-        color: $secondColor;
+    a {
+        color: map-get($theme-colors, "second");
     }
-    &:hover{
+    &:hover {
         cursor: pointer;
         background-color: rgb(16, 16, 16);
         bottom: 7%;
-        transition: all .4s ease;
+        transition: all 0.4s ease;
     }
-} 
+}

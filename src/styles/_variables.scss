@@ -1,0 +1,74 @@
+@use "sass:map";
+
+$theme-colors: (
+    "main": #155bd5,
+    "second": white,
+    "text": #6d6d6d,
+    "background-grey": #fafafa,
+    "hooks": #f5f5f5,
+    "border": (
+        "white": #e0e0e0,
+        "blue": #1c3ab6,
+        "grey": #efefef,
+        "togle": #e4e2e2a5,
+        "blog": #eee,
+        "social": #666,
+        "navbar": #e0e0e092,
+    ),
+    "shadow-for": (
+        "box": (
+            0px 2px 4px rgba(40, 41, 61, 0.04),
+            0px 8px 16px rgba(96, 97, 112, 0.16),
+        ),
+        "team": (
+            0px 0px 1px rgba(40, 41, 61, 0.04),
+            0px 2px 4px rgba(96, 97, 112, 0.16),
+        ),
+        "services-hover": 0 0 20px rgba(0, 0, 0, 0.1),
+        "blog-hover": 0 10px 30px rgba(0, 0, 0, 0.041),
+    ),
+);
+
+@function map-deep-get($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+}
+
+$image-in-team-section: url(../../public/images/overlay.png);
+
+%style-for-p {
+    line-height: 24px;
+    font-size: 16px;
+    color: map-get($theme-colors, "text");
+    font-weight: 400;
+}
+
+%style-for-h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+%display-space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+%display-row {
+    display: flex;
+    flex-direction: row;
+}
+
+%display-column {
+    display: flex;
+    flex-direction: column;
+}
+
+%display-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

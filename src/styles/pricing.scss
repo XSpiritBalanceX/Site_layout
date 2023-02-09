@@ -1,100 +1,94 @@
-$mainColor: #155bd5;
-$secondColor: white;
-$textColor:#6d6d6d;
-$border-color:#1c3ab6;
-$shadow-for-box:0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
+@import "variables";
 
-.sixth-content{
-    background-color: #fafafa;
+.sixth-content {
+    background-color: map-get($theme-colors, "background-grey");
     padding: 10% 5%;
 }
-.contanForPlan{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.contan-for-plan {
+    @extend %display-space-between;
 }
-.itemInPlan{
-    border: solid 1px #efefef;
+.item-in-plan {
+    border: solid 1px map-deep-get($theme-colors, "border", "grey");
     width: 32%;
     padding: 3%;
     border-radius: 10px;
-    background-color: $secondColor;
-    transition: all .3s ease;
-    &:hover{
-        box-shadow: $shadow-for-box;
+    background-color: map-get($theme-colors, "second");
+    transition: all 0.3s ease;
+    &:hover {
+        box-shadow: map-deep-get($theme-colors, "shadow-for", "box");
     }
-    .text-center{
+    .text-center {
         font-weight: 500;
         line-height: 20px;
         font-size: 16px;
         padding: 8px 20px;
     }
-    p{
-        width: 90% !important;
-        font-weight: 400 !important;
-        font-size: 16px !important;
-        line-height: 24px !important;
+    p {
+        width: 90%;
+        @extend %style-for-p;
     }
-    h2{
-        font-weight: 600 !important;
-        font-size: 55px !important;
-        line-height: 68.75px !important;
+    h2 {
+        font-weight: 600;
+        font-size: 55px;
+        line-height: 68.75px;
         position: relative;
     }
-    button{
-        border: $mainColor solid 1px;
+    button {
+        border: map-get($theme-colors, "main") solid 1px;
         border-radius: 5px;
-        color: $mainColor;
+        color: map-get($theme-colors, "main");
         font-size: 16px;
         font-weight: 700;
         line-height: 20px;
         padding: 12px 24px;
         background-color: transparent;
     }
-    button:hover{
-        border: $border-color solid 1px;
+    button:hover {
+        border: map-deep-get($theme-colors, "border", "blue") solid 1px;
         border-radius: 5px;
-        color: $secondColor;
-        background-color: $border-color;
+        color: map-get($theme-colors, "second");
+        background-color: map-deep-get($theme-colors, "border", "blue");
     }
 }
-.doll{
+.doll {
     font-weight: 400;
-    color: $textColor;
+    color: map-get($theme-colors, "text");
     font-size: 20px;
     line-height: 25px;
-    position: absolute;left: -13px; top: 10px;
+    position: absolute;
+    left: -13px;
+    top: 10px;
 }
-.perMon{
+.per-month {
     font-weight: 400;
-    color: $textColor;
+    color: map-get($theme-colors, "text");
     font-size: 20px;
     line-height: 22.5px;
 }
-.selectedPlan{
-    box-shadow: $shadow-for-box;
-    .text-center{
-        color: $secondColor;
-        background-color: $mainColor;
+.selected-plan {
+    box-shadow: map-deep-get($theme-colors, "shadow-for", "box");
+    .text-center {
+        color: map-get($theme-colors, "second");
+        background-color: map-get($theme-colors, "main");
     }
-    button{
-        color: $secondColor;
-        background-color: $mainColor;
+    button {
+        color: map-get($theme-colors, "second");
+        background-color: map-get($theme-colors, "main");
     }
 }
-.ulPric{
+.ul-price {
     list-style: none;
     text-align: start;
-    color: $textColor;
+    color: map-get($theme-colors, "text");
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     width: 100%;
     margin-left: -30px;
-    li{
+    li {
         margin-bottom: 10px;
     }
 }
-.colorInLi{
-    color: $mainColor;
+.color-in-li {
+    color: map-get($theme-colors, "main");
 }
